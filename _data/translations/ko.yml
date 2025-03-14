@@ -12,9 +12,8 @@ lang:
   en: English
 
 home:
-  title: 메타세종 대회
-  subtitle: 임베디드 AI 대회
-  description: 메타세종 대회에 오신 것을 환영합니다. 임베디드 AI의 새로운 지평을 탐구합니다.
+  title: META-SEJONG AI Robotics Challenge 2025
+  description: The proposed challenge aims to promote the advancement of Embodied AI technologies for robots in a virtual environment. Participants must integrate various technological components applicable to robots within the given virtual environment to accomplish specific missions. These technologies will be developed and tested in a simulation environment before being effectively utilized in real-world applications.
   recent_news: 최근 소식
   features: 주요 특징
   feature1: 최첨단 AI 기술 경연

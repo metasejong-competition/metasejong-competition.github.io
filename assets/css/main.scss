@@ -1,3 +1,81 @@
-@use 'variables';
-@use 'layout';
-@use 'components'; 
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "variables";
+@import "layout";
+@import "components";
+
+// 네비게이션 스타일
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #0366d6;
+            }
+        }
+    }
+
+    .lang-switcher {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .lang-link {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #e9ecef;
+            }
+
+            .lang-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+// 메인 컨텐츠 스타일
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .intro-video {
+        width: 95%;
+        height: 400px;
+        background-color: #f0f0f0;
+        border: 1px solid #000;
+    }
+}
+
+// 푸터 스타일
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    margin-top: 2rem;
+} 
