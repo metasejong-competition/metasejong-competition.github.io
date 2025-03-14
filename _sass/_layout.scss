@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@import "variables";
 
 body {
   font-family: $font-family-base;
@@ -21,22 +21,66 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.nav-links {
-  display: flex;
-  gap: $spacing-unit * 2;
+  .nav-links {
+    display: flex;
+    gap: $spacing-unit * 2;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .lang-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      color: $text-color;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $bg-color-light;
+      }
+
+      .lang-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }
 
 main {
-  max-width: $max-width;
-  margin: $spacing-unit * 2 auto;
-  padding: 0 $spacing-unit;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: $spacing-unit * 2;
+
+  .intro-video {
+    width: 95%;
+    height: 400px;
+    background-color: $bg-color-light;
+    border: 1px solid $border-color;
+  }
 }
 
 footer {
-  background-color: $bg-color;
-  padding: $spacing-unit * 2 0;
   text-align: center;
-  margin-top: $spacing-unit * 4;
+  padding: $spacing-unit * 2;
+  background-color: $bg-color;
+  margin-top: $spacing-unit * 2;
 } 

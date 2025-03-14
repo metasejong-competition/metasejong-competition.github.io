@@ -3,27 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     {% seo %}
-    <style>
-        .lang-switcher {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .lang-link {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            text-decoration: none;
-            color: inherit;
-        }
-        .lang-icon {
-            width: 24px;
-            height: 24px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -47,12 +29,12 @@
                 {% assign current_lang = page.lang | default: 'en' %}
                 {% if current_lang == 'ko' %}
                     <a href="{{ page.url | replace: '/ko/', '/en/' }}" class="lang-link">
-                        <img src="/assets/images/en-US.svg" alt="English" class="lang-icon">
+                        <img src="{{ '/assets/images/en-US.svg' | relative_url }}" alt="English" class="lang-icon">
                         <span>{{ t.lang.en }}</span>
                     </a>
                 {% else %}
                     <a href="{{ page.url | replace: '/en/', '/ko/' }}" class="lang-link">
-                        <img src="/assets/images/ko-KR.svg" alt="한국어" class="lang-icon">
+                        <img src="{{ '/assets/images/ko-KR.svg' | relative_url }}" alt="한국어" class="lang-icon">
                         <span>{{ t.lang.ko }}</span>
                     </a>
                 {% endif %}

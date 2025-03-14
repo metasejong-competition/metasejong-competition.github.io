@@ -34,12 +34,19 @@ defaults:
 
 # Sass 설정
 sass:
-  style: compressed
-  implementation: sass-embedded
   sass_dir: _sass
+  style: compressed
+  style_dir: assets/css
+  include_paths:
+    - _sass
+    - assets/css
   load_paths:
     - _sass
     - node_modules
+  sourcemap: never
+  output_style: compressed
+  cache: false
+  cache_partials: false
 
 # Build settings
 markdown: kramdown
