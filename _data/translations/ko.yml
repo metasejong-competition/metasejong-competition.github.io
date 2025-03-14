@@ -7,6 +7,10 @@ nav:
 footer:
   copyright: 모든 권리 보유.
 
+lang:
+  ko: 한국어
+  en: English
+
 home:
   title: 메타세종 대회
   subtitle: 임베디드 AI 대회
