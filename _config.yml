@@ -1,0 +1,51 @@
+title: MetaSejong Competition
+description: MetaSejong Embodied AI competition project page
+baseurl: ""
+url: "https://metasejong-competition.github.io"
+
+# 다국어 설정
+collections:
+  ko:
+    output: true
+    permalink: /ko/:path/
+  en:
+    output: true
+    permalink: /en/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "en"
+  - scope:
+      path: "_ko"
+      type: "ko"
+    values:
+      layout: "default"
+      lang: "ko"
+  - scope:
+      path: "_en"
+      type: "en"
+    values:
+      layout: "default"
+      lang: "en"
+
+# Sass 설정
+sass:
+  style: compressed
+  implementation: sass-embedded
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - node_modules
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache 

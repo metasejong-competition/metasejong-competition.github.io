@@ -1,0 +1,31 @@
+nav:
+  home: 홈
+  about: 소개
+  competition: 대회
+  contact: 문의
+
+footer:
+  copyright: 모든 권리 보유.
+
+home:
+  title: 메타세종 대회
+  subtitle: 임베디드 AI 대회
+  description: 메타세종 대회에 오신 것을 환영합니다. 임베디드 AI의 새로운 지평을 탐구합니다.
+  recent_news: 최근 소식
+  features: 주요 특징
+  feature1: 최첨단 AI 기술 경연
+  feature2: 글로벌 전문가 네트워크
+  feature3: 풍부한 상금과 인정
+  learn_more: 자세히 알아보기
+
+about:
+  title: 소개
+  content: 임베디드 AI 연구 발전을 위한 우리의 미션과 비전을 알아보세요.
+
+competition:
+  title: 대회
+  content: 대회에 참가하여 여러분의 임베디드 AI 솔루션을 선보이세요.
+
+contact:
+  title: 문의하기
+  content: 질문이나 문의사항이 있으시면 연락해 주세요. 

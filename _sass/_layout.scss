@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+header {
+  background-color: $bg-color;
+  padding: $spacing-unit 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: $spacing-unit * 2;
+}
+
+main {
+  max-width: $max-width;
+  margin: $spacing-unit * 2 auto;
+  padding: 0 $spacing-unit;
+}
+
+footer {
+  background-color: $bg-color;
+  padding: $spacing-unit * 2 0;
+  text-align: center;
+  margin-top: $spacing-unit * 4;
+} 

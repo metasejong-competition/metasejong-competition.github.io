@@ -1,0 +1,35 @@
+nav:
+  home: Home
+  about: About
+  competition: Competition
+  contact: Contact
+
+footer:
+  copyright: All rights reserved.
+
+lang:
+  ko: 한국어
+  en: English
+
+home:
+  title: MetaSejong Competition
+  subtitle: Embodied AI Competition
+  description: Welcome to the MetaSejong Competition, where we explore the frontiers of embodied AI.
+  recent_news: Recent News
+  features: Key Features
+  feature1: Cutting-edge AI Technology Competition
+  feature2: Global Expert Network
+  feature3: Rich Prizes and Recognition
+  learn_more: Learn More
+
+about:
+  title: About Us
+  content: Learn about our mission and vision for advancing embodied AI research.
+
+competition:
+  title: Competition
+  content: Join our competition and showcase your embodied AI solutions.
+
+contact:
+  title: Contact Us
+  content: Get in touch with us for any questions or inquiries. 

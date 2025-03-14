@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+nav a {
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 500;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  gap: $spacing-unit;
+}
+
+.lang-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: $spacing-unit * 0.25 $spacing-unit * 0.5;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.lang-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+} 
