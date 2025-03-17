@@ -69,11 +69,11 @@ sponsor-section:
   content:
     sponsor-1:
       name: "Sejong University"
-      image: "sejong_logo.png"
+      image: "sponsor-sejonguniv.png"
       link: "https://www.sejong.ac.kr"
     sponsor-2:
       name: "Sejong University"
-      image: "sejong_logo.png"
+      image: "sponsor-sejonguniv.png"
       link: "https://www.sejong.ac.kr"
 
 description: Welcome to the MetaSejong Competition, where we explore the frontiers of embodied AI.

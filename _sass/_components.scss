@@ -128,3 +128,21 @@ nav {
     border-color: darken($primary-color, 10%);
   }
 }
+
+#sponsor-section {
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-unit * 2;
+
+    .sponsor {
+      a {
+        img {
+          height: 30px;
+          object-fit: contain;
+        } 
+      }
+    }
+  }
+}
