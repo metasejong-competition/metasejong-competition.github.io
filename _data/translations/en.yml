@@ -12,14 +12,77 @@ lang:
   en: English
 
 home:
-  title: META-SEJONG AI Robotics Challenge 2025
-  description: Welcome to the MetaSejong Competition, where we explore the frontiers of embodied AI.
-  recent_news: Recent News
-  features: Key Features
-  feature1: Cutting-edge AI Technology Competition
-  feature2: Global Expert Network
-  feature3: Rich Prizes and Recognition
-  learn_more: Learn More
+  event:
+    title: META-SEJONG AI Robotics Challenge
+    full_title: META-SEJONG AI Robotics Challenge 2025
+  intro-section:
+    title: Introduction
+    content:
+      text-1: "The proposed challenge aims to promote the advancement of Embodied AI technologies for robots in a virtual environment. Participants must integrate various technological components applicable to robots within the given virtual environment to accomplish specific missions. These technologies will be developed and tested in a simulation environment before being effectively utilized in real-world applications."
+      text-2: "This competition challenges participants to train and deploy Embodied AI systems for robots in the virtual environment of 'META-SEJONG,' a dataset developed by Sejong University."
+      text-3: "The primary task focuses on controlling an autonomous mobile robot equipped with a robotic arm to identify, classify, and collect various objects scattered within the environment."
+      text-4: "Participants must develop and integrate the following key technologies:"
+      text-4-1: "Object recognition from camera sensor data"
+      text-4-2: "Object classification based on identified features"
+      text-4-3: "Autonomous navigation within the virtual environment"
+      text-4-4: "Pick-and-place operations using the robotic arm"
+      text-5: "The scoring system will be based on the effectiveness of navigation and the number of objects successfully classified and collected within the given timeframe."
+  environment-section:
+    title: Competition Environment
+    content:
+      text-1: "The competition uses IsaacSim to create a virtual environment where participants complete given missions through robot control in the virtual space."
+      text-2: "TBD"
+      text-3: "TBD"
+  objectives-section:
+    title: Objectives
+    content:
+      text-1: "This competition begins with identifying waste through CCTV footage in the university campus virtual environment provided by the organizers."
+      text-2: "Participants must be able to locate waste on campus using the provided CCTV footage and CCTV installation information."
+      text-3: "Once waste locations are identified, participants can command robots to move to these locations."
+      text-4: "As multiple pieces of waste may be scattered across campus, participants must calculate efficient routes for quick waste collection."
+      text-5: "When approaching waste locations, participants must calculate information for waste collection through robotic arm control using the robot's onboard camera footage."
+  api-section:
+    title: APIs
+    content:
+      text-1: "The organizers provide the following data:"
+      text-2: "3D Model Data and APIs for Meta-Sejong Virtual Environment"
+      text-2-1: "Sejong University 3D Model data in USD file format loadable in IsaacSim"
+      text-2-2: "Occupancy map for robot navigation"
+      text-2-3: "CCTV camera location/pose/spec information and CCTV footage streaming data"
+      text-3: "Robot 3D Model Data and API"
+      text-3-1: "Robot 3D model data in USD file format loadable in IsaacSim"
+      text-3-2: "RGB camera data and depth camera data installed on the robot"
+      text-3-3: "APIs required for robot arm control"
+      text-3-4: "APIs required for robot arm control"
+      text-4: "Target Waste 3D Model Data"
+      text-4-1: "3D model data for x types of target waste"
+      text-4-2: "3D model data for x types of non-target objects"
+  evaluation-section:
+    title: Evaluation
+    content:
+      text-1: "Evaluation metrics include..."
+      text-2: "TBD"
+      text-3: "TBD"
+
+sponsor-section:
+  title: Sponsors
+  content:
+    sponsor-1:
+      name: "Sejong University"
+      image: "sejong_logo.png"
+      link: "https://www.sejong.ac.kr"
+    sponsor-2:
+      name: "Sejong University"
+      image: "sejong_logo.png"
+      link: "https://www.sejong.ac.kr"
+
+description: Welcome to the MetaSejong Competition, where we explore the frontiers of embodied AI.
+recent_news: Recent News
+features: Key Features
+feature1: Cutting-edge AI Technology Competition
+feature2: Global Expert Network
+feature3: Rich Prizes and Recognition
+learn_more: Learn More
 
 about:
   title: About Us

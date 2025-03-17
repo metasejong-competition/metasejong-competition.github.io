@@ -52,6 +52,35 @@ nav {
     }
 }
 
+.title {
+  text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
+
+.title-event {
+  text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
+
+
+.title-level-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
+
+.title-level-2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+} 
+
+
+
 // Video component
 .intro-video {
     width: 95%;
@@ -59,4 +88,43 @@ nav {
     background-color: #f0f0f0;
     border: 1px solid #000;
     margin-bottom: $spacing-unit * 2;
-} 
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: $spacing-unit * 2;
+  margin: $spacing-unit * 2 auto;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color:white;
+  }
+}
+
+// Button styles
+.link-button {
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: $primary-color;
+  color: white;
+  border: 1px solid $primary-color;
+
+  a {
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
