@@ -10,11 +10,12 @@
 </head>
 <body>
     <header>
+        {% assign current_lang = page.lang | default: 'en' %}
+        {% assign t = site.data.translations[current_lang] %}
         <nav>
+            <div class="notice-badge">{{ t.nav.notice-badge }}</div>
             <div class="nav-bar">
                 <div class="nav-links">
-                    {% assign current_lang = page.lang | default: 'en' %}
-                    {% assign t = site.data.translations[current_lang] %}
                     <a href="#home">{{ t.nav.home }}</a>
                     <a href="#intro-section">{{ t.nav.intro }}</a>
                     <a href="#environment-section">{{ t.nav.environment }}</a>

@@ -1,14 +1,15 @@
 nav:
-  home: 홈
-  intro: 소개
-  environment: 환경
-  objectives: 목표
-  api: APIs
-  evaluation: 평가
-  sponsor: 후원
+  home: "홈"
+  intro: "소개"
+  environment: "환경"
+  objectives: "목표"
+  api: "APIs"
+  evaluation: "평가"
+  sponsor: "후원"
+  notice-badge: "준비 중. 공식 공지 전입니다."
 
 footer:
-  copyright: 모든 권리 보유.
+  copyright: "모든 권리 보유."
 
 lang:
   ko: 한국어
