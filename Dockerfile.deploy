@@ -1,0 +1,76 @@
+# /*******************************************************************************
+#  * Copyright 2025 AISL Sejong University, Korea
+#  *
+#  *	Licence: TBD
+#  *******************************************************************************/
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG ISAACSIM_VERSION=4.2.0
+
+# NVIDIA Isaac Sim 기반 이미지 사용
+# https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim
+FROM nvcr.io/nvidia/isaac-sim:${ISAACSIM_VERSION} AS isaac-sim
+
+
+# OMNI_SERVER
+# ENV OMNI_SERVER=http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.2.0
+# ENV OMNI_SERVER=omniverse://localhost/NVIDIA/Assets/Isaac/4.2.0
+# ENV OMNI_USER=admin
+# ENV OMNI_PASS=admin
+# ENV MIN_DRIVER_VERSION=525.60.11
+
+
+# 작업 디렉터리 설정 (필요한 package 설치 등)
+WORKDIR /isaac-sim
+
+ENV USE_ENV=${USE_ENV}
+
+
+# 필요한 패키지 설치
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    x11-xserver-utils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# conda를 사용하는 경우 conda 설치     
+RUN if [ "$USE_ENV" = "conda" ]; then \
+        apt-get install -y wget \
+        bzip2; \
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh; \
+        bash /tmp/miniconda.sh -b -p /opt/miniconda; \
+    fi
+
+ENV PATH="/opt/miniconda/bin:${PATH}"
+
+
+# pip 최신 버전으로 업그레이드
+RUN /isaac-sim/kit/python/bin/python3 -m pip install --upgrade pip
+
+# PYTHONPATH 설정
+ENV PYTHONPATH=/isaac-sim/kit/python/lib/python3.10/site-packages:/isaac-sim/exts
+
+# USD Plugin Path 설정
+ENV USD_PLUGIN_PATH=/isaac-sim/exts/omni.usd.schema.isaac/plugins
+
+# Add symlink
+RUN ln -s exts/omni.isaac.examples/omni/isaac/examples extension_examples
+
+
+# requirements.txt 및 environment.yml 파일 복사
+COPY ./simulation_app /simulation_app
+
+
+# Python 패키지 설치 (USE_ENV 설정에 따라 동작)
+RUN if [ "$USE_ENV" = "venv" ]; then \
+        /isaac-sim/kit/python/bin/python3 -m venv /simulation_app/venv && \
+        source /simulation_app/venv/bin/activate && \
+        pip install -r /simulation_app/requirements.txt; \
+    elif [ "$USE_ENV" = "conda" ]; then \
+        /opt/miniconda/bin/conda env create -f /simulation_app/environment.yml; \
+    elif [ "$USE_ENV" = "none" ]; then \
+        /isaac-sim/kit/python/bin/python3 -m pip install -r /simulation_app/requirements.txt; \
+    fi
+
+# Default entrypoint to launch headless with streaming
+ENTRYPOINT ["/isaac-sim/runapp.sh"]

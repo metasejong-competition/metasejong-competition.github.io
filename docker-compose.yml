@@ -1,0 +1,84 @@
+services:
+  metacom2025-sejong:
+    build: .
+    image: isaac-sim:4.2.0-ubuntu22.04
+    runtime: nvidia
+    environment:
+      - MODE=dev
+      - ACCEPT_EULA=Y
+      - PRIVACY_CONSENT=Y
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - AMENT_PREFIX_PATH=/isaac-sim/exts/omni.isaac.ros2_bridge/humble
+      - LD_LIBRARY_PATH=/isaac-sim/exts/omni.isaac.ros2_bridge/humble/lib:$LD_LIBRARY_PATH
+      - PYTHONPATH=/isaac-sim/kit/python/lib/python3.10/site-packages:/isaac-sim/exts
+      - USD_PLUGIN_PATH=/isaac-sim/exts/omni.usd.schema.isaac/plugins
+      - ROS_DISTRO=humble
+      - EXTENSIONS=omni.isaac.ros2_bridge
+      - XAUTHORITY=/root/.Xauthority
+      - ROS_DOMAIN_ID=0
+      - FASTRTPS_DEFAULT_PROFILES_FILE=/fastdds.xml
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ./simulation_app:/simulation_app:rw
+      - ./fastdds_config/fastdds.xml:/fastdds.xml:ro
+      - ${XAUTHORITY}:/root/.Xauthority:rw
+      - ./workspace/cache/kit:/isaac-sim/kit/cache:rw
+      - ./workspace/cache/ov:/root/.cache/ov:rw
+      - ./workspace/cache/pip:/root/.cache/pip:rw
+      - ./workspace/cache/glcache:/root/.cache/nvidia/GLCache:rw
+      - ./workspace/cache/computecache:/root/.nv/ComputeCache:rw
+      - ./workspace/logs:/root/.nvidia-omniverse/logs:rw
+      - ./workspace/data:/root/.local/share/ov/data:rw
+      - ./workspace/documents:/root/Documents:rw      
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/shm:/dev/shm
+      - ./resources/models/meta-sejong:/root/Documents/meta-sejong:rw
+      - ./resources/models/robot:/root/Documents/robot:rw
+      - ./resources/assets:/root/Documents/assets:rw
+      - ./resources/python/requirements.txt:/root/Documents/python/requirements.txt:rw
+      - ./resources/env_config/config_dev.yaml:/root/Documents/env_config/config.yaml:rw
+      - ./resources/extensions/omni.metacom.pickandplace.extension:/root/Documents/Kit/shared/exts/aisl.omnigraph.extension:rw
+      - ./resources/extensions/omni.isaac.sim.base.kit:/isaac-sim/apps/omni.isaac.sim.base.kit:rw
+      # test only
+      - ./resources/output:/root/Documents/output:rw
+
+    network_mode: "host"
+    # entrypoint: ["/bin/sh", "-c", "pip3 install --no-cache-dir -r /simulation_app/requirements.txt && exec /isaac-sim/python.sh /simulation_app/codes/run_simulation_app.py", 'source /opt/ros/humble/setup.bash && cd /simulation_app && source install/local_setup.bash']
+    entrypoint: >
+      /bin/bash -c "
+      source /opt/ros/humble/setup.bash &&
+      cd /simulation_app &&
+      pip3 install --no-cache-dir -r /root/Documents/python/requirements.txt &&
+      exec /isaac-sim/python.sh /simulation_app/codes/run_simulation_app.py
+      "
+    # entrypoint: ["/isaac-sim/python.sh", "/simulation_app/codes/run_simulation_app.py"]
+    privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+  # map_server:
+  #   build: ./simulation_app/navigation/map_server
+  #   container_name: map_server
+  #   network_mode: "host"
+  #   environment:
+  #     - ROS_DOMAIN_ID=7
+
+  # amcl:
+  #   build: ./simulation_app/navigation/amcl
+  #   container_name: amcl
+  #   network_mode: "host"
+  #   environment:
+  #     - ROS_DOMAIN_ID=7
+
+  # bringup:
+  #   build: ./simulation_app/navigation/bringup
+  #   container_name: bringup
+  #   network_mode: "host"
+  #   environment:
+  #     - ROS_DOMAIN_ID=7

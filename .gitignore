@@ -1,2 +1,4 @@
-_site
-.jekyll-cache
+workspace/
+*.tar
+resources/models/meta-sejong/
+resources/models/robot/

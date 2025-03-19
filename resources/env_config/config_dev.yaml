@@ -1,0 +1,135 @@
+camera_configs:
+  - name: "Gunja1"
+    position: [-16.9707, -124.78013, 13.00462]
+    rotation: [48.869, 58.594, 39.827]
+  - name: "Gunja2"
+    position: [-16.4677, -135.14457, 13.0014]
+    rotation: [-174.325, -21.709, -71.334]
+  - name: "Gwanggaeto1"
+    position: [-43.93139, -112.29234, 11.52459]
+    rotation: [5.923, 17.969, 70.601]
+  - name: "Gwanggaeto2"
+    position: [-53.47695, -51.87235, 15.55474]
+    rotation: [178.239, -1.553, -49.686]
+  - name: "Center1"
+    position: [-4.05418, 48.781, 9.49438]
+    rotation: [150.04, 28.21, -41.653]
+  - name: "Center2"
+    position: [-11.5711, 56.40473, 8.77972]
+    rotation: [42.187, 28.797, 30.289]
+  - name: "Chungmu1"
+    position: [-17.96172, 127.59245, 5.63505]
+    rotation: [160.212, 38.465, -60.051]
+  - name: "Chungmu2"
+    position: [-59.11074, 156.4267, 5.90819]
+    rotation: [-175.98, -16.229, -77.723]
+
+standard_pos:
+  Gunja1:
+    translation: [-25.99282, -121.73572, 9.1281]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Gunja2:
+    translation: [-11.76153, -146.64246, 9.1184]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Gwanggaeto1:
+    translation: [-48.05285, -100.41619, 7.33223]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Gwanggaeto2:
+    translation: [-53.10564, -62.06616, 7.35394]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Center1:
+    translation: [-9.53026, 41.97634, 2.1281]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Center2:
+    translation: [-16.31494, 60.12313, 2.6002]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Chungmu1:
+    translation: [-25.54326, 119.27288, 1.1502]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+  Chungmu2:
+    translation: [-52.4361, 134.70523, 1.13068]
+    orientation: [0.0, 0.0, -90.0]
+    scale: [1.0, 1.0, 1.0]
+
+object_camera_resolution: [640, 640]
+
+object_list:
+  - 002_master_chef_can
+  - 003_cracker_box
+  - 025_mug
+  - 036_wood_block
+  - cola_can
+  - disposable_cup
+  - juice
+  - tissue
+
+asset_attribute:
+  002_master_chef_can:
+    type: ycb
+    usd_dir: http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.2
+    usd_file: Isaac/Props/YCB/Axis_Aligned/002_master_chef_can.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.4, 0.4, 0.4]
+  003_cracker_box:
+    type: ycb
+    usd_dir: http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.2
+    usd_file: Isaac/Props/YCB/Axis_Aligned/003_cracker_box.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.7, 0.7, 0.7]
+  025_mug:
+    type: ycb
+    usd_dir: http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.2
+    usd_file: Isaac/Props/YCB/Axis_Aligned/025_mug.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [1.0, 1.0, 1.0]
+  036_wood_block:
+    type: ycb
+    usd_dir: http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.2
+    usd_file: Isaac/Props/YCB/Axis_Aligned/036_wood_block.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.4, 0.4, 0.4]
+  cola_can:
+    type: custom
+    usd_dir: /root/Documents/assets
+    usd_file: cola.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 90]
+    scale: [0.0035, 0.0035, 0.0035]
+  disposable_cup:
+    type: custom
+    usd_dir: /root/Documents/assets
+    usd_file: disposable_cup.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.003, 0.003, 0.003]
+  juice:
+    type: custom
+    usd_dir: /root/Documents/assets
+    usd_file: juice.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.0035, 0.0035, 0.0035]
+  tissue:
+    type: custom
+    usd_dir: /root/Documents/assets
+    usd_file: tissue.usd
+    position: [-49.0, 130.0, 14.06]
+    orientation: [-90, 0, 0]
+    scale: [0.004, 0.004, 0.004]
+
+
+view_point_camera_view_eye: [-113.03272, 64.98621, 30.59225]
+view_point_camera_view_target: [-63, 119, 1.02]
+
+robot_start_point: [-90.94401, 96.38982, 14.93225]
