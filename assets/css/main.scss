@@ -8,12 +8,6 @@
 
 // 네비게이션 스타일
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
     .nav-links {
         display: flex;
@@ -58,12 +52,8 @@ nav {
     }
 }
 
-// 메인 컨텐츠 스타일
+// 메인 컨텐츠 스타일f
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-
     .intro-video {
         width: 95%;
         height: 400px;
@@ -74,8 +64,4 @@ main {
 
 // 푸터 스타일
 footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f8f9fa;
-    margin-top: 2rem;
 } 

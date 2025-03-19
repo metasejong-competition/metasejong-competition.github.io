@@ -1,55 +1,29 @@
 @import "variables";
 
-// Navigation
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $spacing-unit $spacing-unit * 2;
-    background-color: $bg-color;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
 
-    .nav-links {
-        display: flex;
-        gap: $spacing-unit * 2;
+.title-event {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
 
-        a {
-            text-decoration: none;
-            color: $text-color;
-            font-weight: 500;
-            transition: color 0.3s ease;
+.title-level-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
+}
 
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-
-    .lang-switcher {
-        display: flex;
-        align-items: center;
-        gap: $spacing-unit;
-
-        .lang-link {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            text-decoration: none;
-            color: $text-color;
-            padding: 4px 8px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: $border-color;
-            }
-
-            .lang-icon {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
+.title-level-2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: $spacing-unit * 2;
 }
 
 // Video component
@@ -59,4 +33,61 @@ nav {
     background-color: #f0f0f0;
     border: 1px solid #000;
     margin-bottom: $spacing-unit * 2;
-} 
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: $spacing-unit * 2;
+    margin: $spacing-unit * 2 auto;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}
+
+// Button styles
+.link-button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: $primary-color;
+    color: white;
+    border: 1px solid $primary-color;
+
+    a {
+        i {
+            margin-right: 8px;
+        }
+    }
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+    }
+}
+
+#sponsor-section {
+    .sponsors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $spacing-unit * 2;
+
+        .sponsor {
+            a {
+                img {
+                    height: 30px;
+                    object-fit: contain;
+                } 
+            }
+        }
+    }
+}

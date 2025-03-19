@@ -1,34 +1,79 @@
 nav:
-  home: Home
-  about: About
-  competition: Competition
-  contact: Contact
+  home: "Home"
+  intro: "Introduction"
+  environment: "Environment"
+  objectives: "Objectives"
+  api: "APIs"
+  evaluation: "Evaluation"
+  sponsor: "Sponsors"
 
 footer:
-  copyright: All rights reserved.
+  copyright: "All rights reserved."
 
 lang:
-  ko: 한국어
-  en: English
+  en: "English"
+  ko: "Korean"
 
 home:
-  title: META-SEJONG AI Robotics Challenge 2025
-  description: Welcome to the MetaSejong Competition, where we explore the frontiers of embodied AI.
-  recent_news: Recent News
-  features: Key Features
-  feature1: Cutting-edge AI Technology Competition
-  feature2: Global Expert Network
-  feature3: Rich Prizes and Recognition
-  learn_more: Learn More
-
-about:
-  title: About Us
-  content: Learn about our mission and vision for advancing embodied AI research.
-
-competition:
-  title: Competition
-  content: Join our competition and showcase your embodied AI solutions.
-
-contact:
-  title: Contact Us
-  content: Get in touch with us for any questions or inquiries. 
+  event:
+    title: "META-SEJONG AI Robotics Challenge"
+    full-title: "META-SEJONG AI Robotics Challenge at IEEE MetaCom 2025"
+  intro-section:
+    title: "Introduction"
+    content:
+      text-1: "The META-SEJONG AI Robotics Challenge is a competition that aims to advance the development of AI-based autonomous mobile robots. This challenge focuses on the integration of computer vision, natural language processing, and robotics technologies to create intelligent systems capable of understanding and interacting with their environment."
+      text-2: "The competition is designed to push the boundaries of what's possible in autonomous navigation, object recognition, and human-robot interaction. Participants will develop and deploy AI models that enable robots to navigate complex environments, recognize and classify objects, and perform tasks based on natural language instructions."
+      text-3: "The challenge is part of the IEEE MetaCom 2025 conference, providing a platform for researchers and developers to showcase their innovations in AI and robotics. The competition environment is based on a virtual representation of Sejong University's campus, offering a realistic and challenging setting for testing autonomous navigation and object recognition capabilities."
+      text-4: "Key features of the competition include:"
+      text-4-1: "Advanced computer vision and object recognition tasks"
+      text-4-2: "Natural language processing for human-robot interaction"
+      text-4-3: "Autonomous navigation in complex environments"
+      text-4-4: "Real-time decision making and task execution"
+      text-5: "The competition provides participants with a comprehensive development environment, including simulation tools, datasets, and evaluation metrics. This enables teams to focus on developing innovative AI solutions while working with realistic robotics scenarios."
+  environment-section:
+    title: "Competition Environment"
+    content:
+      text-1: "The competition environment is based on a virtual representation of Sejong University's campus, created using advanced 3D modeling techniques. This environment includes various buildings, pathways, and interactive elements that challenge participants' AI and robotics solutions."
+      text-2: "The virtual environment is designed to simulate real-world conditions, including dynamic obstacles, varying lighting conditions, and complex navigation scenarios. This provides a realistic testing ground for autonomous navigation and object recognition algorithms."
+      text-3: "Participants will have access to detailed 3D models, sensor data, and simulation tools that accurately represent the physical environment. This enables thorough testing and validation of AI models before deployment in real-world scenarios."
+  objectives-section:
+    title: "Objectives"
+    content:
+      text-1: "The primary objective of the META-SEJONG AI Robotics Challenge is to advance the development of AI-based autonomous mobile robots. This includes improving capabilities in computer vision, natural language processing, and autonomous navigation."
+      text-2: "The competition aims to foster innovation in human-robot interaction, enabling robots to understand and respond to natural language instructions while performing complex tasks in dynamic environments."
+      text-3: "Another key objective is to promote the development of robust and efficient AI models that can operate in real-world scenarios. This includes handling various environmental conditions, dynamic obstacles, and complex navigation challenges."
+      text-4: "The challenge also seeks to advance the integration of multiple AI technologies, including computer vision, natural language processing, and robotics, to create more intelligent and capable autonomous systems."
+      text-5: "Finally, the competition aims to contribute to the broader field of AI and robotics by providing a platform for researchers and developers to showcase their innovations and share knowledge with the community."
+  api-section:
+    title: "APIs"
+    content:
+      text-1: "The competition provides a comprehensive set of APIs for participants to develop and test their AI and robotics solutions. These APIs cover various aspects of robot control, sensor data processing, and environment interaction."
+      text-2: "Navigation APIs"
+      text-2-1: "Path planning and route optimization"
+      text-2-2: "Obstacle avoidance and dynamic path adjustment"
+      text-2-3: "Real-time position tracking and mapping"
+      text-3: "Vision APIs"
+      text-3-1: "Object detection and recognition"
+      text-3-2: "Scene understanding and analysis"
+      text-3-3: "Visual tracking and monitoring"
+      text-3-4: "Image processing and enhancement"
+      text-4: "Interaction APIs"
+      text-4-1: "Natural language command processing"
+      text-4-2: "Human-robot communication protocols"
+  evaluation-section:
+    title: "Evaluation"
+    content:
+      text-1: "The evaluation of participants' solutions will be based on multiple criteria, including navigation accuracy, object recognition performance, and task completion efficiency. The scoring system is designed to reward both technical excellence and practical applicability."
+      text-2: "Navigation performance will be assessed based on path planning efficiency, obstacle avoidance capabilities, and overall movement smoothness. Object recognition accuracy will be evaluated through various test scenarios with different lighting conditions and object arrangements."
+      text-3: "The final evaluation will consider the overall system performance, including the integration of different AI components, response time, and reliability in completing assigned tasks."
+sponsor-section:
+  title: "Sponsors"
+  content:
+    sponsor-1:
+      name: "Sejong University"
+      image: "sponsor-sejonguniv.png"
+      link: "https://www.sejong.ac.kr"
+    sponsor-2:
+      name: "Sejong University"
+      image: "sponsor-sejonguniv.png"
+      link: "https://www.sejong.ac.kr"
