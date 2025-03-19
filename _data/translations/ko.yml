@@ -1,8 +1,11 @@
 nav:
   home: 홈
-  about: 소개
-  competition: 대회
-  contact: 문의
+  intro: 소개
+  environment: 환경
+  objectives: 목표
+  api: APIs
+  evaluation: 평가
+  sponsor: 후원
 
 footer:
   copyright: 모든 권리 보유.
@@ -21,7 +24,7 @@ home:
       text-1: "본 대회는 가상 환경에서 로봇을 위한 체화 인공지능(Embodied AI) 기술의 발전을 촉진하는 것을 목표로 합니다. 참가자들은 주어진 가상 환경에서 특정 임무를 수행하기 위해 로봇에 적용 가능한 다양한 기술 구성 요소들을 통합해야 합니다. 이러한 기술들은 실제 환경에서 효과적으로 활용되기 전에 시뮬레이션 환경에서 개발되고 테스트될 것입니다."
       text-2: "본 대회는 참가자들이 세종대학교에서 개발한 'META-SEJONG' 가상 환경에서 로봇을 위한 체화 인공지능 시스템을 학습하고 배포하는 것에 도전하게 합니다."
       text-3: "주요 과제는 로봇 팔이 장착된 자율 이동 로봇을 제어하여 환경 내에 흩어져 있는 다양한 물체를 식별, 분류 및 수집하는 것에 중점을 둡니다."
-      text-4: "참가자들은 다음과 같은 핵심 기술들을 개발하고 통합해야 합니다:"
+      text-4: "참가자들은 다음과 같은 핵심 기술들을 개발하고 통합해야 합니다"
       text-4-1: "카메라 센서 데이터를 통한 객체 인식"
       text-4-2: "식별된 특징을 기반으로 한 객체 분류"
       text-4-3: "가상 환경 내에서의 자율 주행"
@@ -31,7 +34,13 @@ home:
     title: 경진대회 환경
     content:
       text-1: "경진대회는 IsaacSim을 이용한 가상환경을 구성하고, 가상환경에서의 로봇 제어를 통해 주어진 임무를 수행하도록 합니다."
-      text-2: "TBD"
+      text-2:
+      text-3: "경진대회 운영 시스템 사양"
+      text-3-1: "운영체제**: Ubuntu 22.04"
+      text-2-2: "CPU: Intel Xeon Gold 6430 (32코어)"
+      text-2-3: "GPU: GeForce RTX 4090"
+      text-2-4: "RAM: 512GB"
+      text-2-5: "소프트웨어: ROS2 Humble"
       text-3: "TBD"
   objectives-section:
     title: 목표

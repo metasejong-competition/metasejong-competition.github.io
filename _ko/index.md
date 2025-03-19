@@ -7,15 +7,7 @@ permalink: /ko/
 ---
 {% assign t = site.data.translations.ko %}
 
-<nav class="section-nav">
-  <a href="#intro-section">{{ t.nav.home }}</a>
-  <a href="#environment-section">경진대회 환경</a>
-  <a href="#objectives-section">목표</a>
-  <a href="#api-section">APIs</a>
-  <a href="#evaluation-section">평가</a>
-</nav>
-
-<div class="title">{{ t.home.event.title }}</div>
+<div class="title" id="home">{{ t.home.event.title }}</div>
 
 <div class="title-event"><a href="https://ieee-metacom.org">IEEE MetaCom 2025</a></div>
 
