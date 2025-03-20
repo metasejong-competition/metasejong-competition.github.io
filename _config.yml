@@ -11,6 +11,9 @@ collections:
   en:
     output: true
     permalink: /en/:path/
+  guide:
+    output: true
+    permalink: /guide/:path/
 
 defaults:
   - scope:
@@ -31,6 +34,12 @@ defaults:
     values:
       layout: "default"
       lang: "en"
+  - scope:
+      path: "_guide"
+      type: "guide"
+    values:
+      layout: "guide"
+      lang: "en"
 
 # Sass 설정
 sass:
@@ -47,6 +56,7 @@ sass:
   output_style: compressed
   cache: false
   cache_partials: false
+  main: main.scss
 
 # Build settings
 markdown: kramdown
