@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  <div class="guide-container">
+    <div class="guide-sidebar">
+      <div class="guide-nav">
+        <h3>목차</h3>
+        <ul>
+          <li><a href="/guide/" {% if page.url == "/guide/" or page.url == "/guide/index.html" %}class="active"{% endif %}>개발자 가이드</a></li>
+          <li><a href="/guide/getting-started/" {% if page.url contains "/guide/getting-started" %}class="active"{% endif %}>시작하기</a></li>
+          <li><a href="/guide/development-environment/" {% if page.url contains "/guide/development-environment" %}class="active"{% endif %}>개발 환경</a></li>
+          <li><a href="/guide/api-documentation/" {% if page.url contains "/guide/api-documentation" %}class="active"{% endif %}>API 문서</a></li>
+          <li><a href="/guide/simulation/" {% if page.url contains "/guide/simulation" %}class="active"{% endif %}>시뮬레이션</a></li>
+          <li><a href="/guide/evaluation/" {% if page.url contains "/guide/evaluation" %}class="active"{% endif %}>평가 시스템</a></li>
+          <li><a href="/guide/troubleshooting/" {% if page.url contains "/guide/troubleshooting" %}class="active"{% endif %}>Troubleshooting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="guide-content">
+      {{ content }}
+    </div>
+  </div>
+</div> 
