@@ -65,4 +65,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-include-cache 
+  - jekyll-include-cache
+
+# Cache busting
+cache_busting: true
+cache_busting_style: timestamp 
