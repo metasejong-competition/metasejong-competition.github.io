@@ -35,7 +35,7 @@ permalink: /guide/
 - 평가 방법
 - 점수 계산 방식
 
-### [FAQ](./faq/)
+### [Troubleshooting](./troubleshooting/)
 - 자주 묻는 질문
 - 문제 해결 가이드
 - 추가 문의 방법 

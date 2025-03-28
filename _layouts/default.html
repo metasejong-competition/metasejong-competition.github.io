@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/iotcoss.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     {% seo %}
@@ -18,11 +19,12 @@
                 <div class="nav-links">
                     <a href="/{{current_lang}}#home">{{ t.nav.home }}</a>
                     <a href="/{{current_lang}}#intro-section">{{ t.nav.intro }}</a>
-                    <a href="/{{current_lang}}#environment-section">{{ t.nav.environment }}</a>
-                    <a href="/{{current_lang}}#objectives-section">{{ t.nav.objectives }}</a>
-                    <a href="/{{current_lang}}#api-section">{{ t.nav.api }}</a>
-                    <a href="/{{current_lang}}#evaluation-section">{{ t.nav.evaluation }}</a>
+                    <a href="/{{current_lang}}#mission-section">{{ t.nav.mission }}</a>
+                    <a href="/{{current_lang}}#award-section">{{ t.nav.award }}</a>
+                    <a href="/{{current_lang}}#timeline-section">{{ t.nav.timeline }}</a>
                     <a href="/{{current_lang}}#sponsor-section">{{ t.nav.sponsor }}</a>
+                    <span class="nav-divider"></span>
+                    <a href="/apply/">{{ t.nav.apply }}</a>
                     <a href="/guide/">{{ t.nav.guide }}</a>
                 </div>
                 <div class="lang-switcher">
@@ -43,8 +45,10 @@
         </nav>
     </header>
     <main>
-        {{ content }}
-        <div class="placeholdler"></div>
+        <div class="main-content">
+            {{ content }}
+            <div class="placeholdler"></div>
+        </div>
     </main>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. {{ t.footer.copyright }}</p>
