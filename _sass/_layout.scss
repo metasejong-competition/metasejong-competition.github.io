@@ -17,7 +17,6 @@ header {
   display: block;
   background-color: $bg-color;
   padding: $spacing-unit 0;
-  background-color: #f8f9fa;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   
   nav {
@@ -39,28 +38,27 @@ header {
 }
 
 main {
-  max-width: $container-width;
+  width: 100%;
   height: calc(100vh - 100px);
-  margin: 0 auto;
   padding: $spacing-unit;
   overflow-y: auto;
-
-  .intro-video {
-    width: 95%;
-    height: 400px;
-    background-color: $bg-color-light;
-    border: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  .main-content {
+    max-width: $container-width;
+    margin: 0 auto;
   }
-
   .placeholdler {
     height: 600px;
   }
 }
 
 footer {
-  height: 50px;
+  height: 3rem;
   text-align: center;
-  padding: $spacing-unit * 2;
-  background-color: $bg-color;
-  margin-top: $spacing-unit * 2;
+  padding: 0;
+  background-color: #f8f9fa;
+  margin-top: 0;
 } 

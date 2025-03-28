@@ -5,8 +5,9 @@
 @import "variables";
 @import "layout";
 @import "components";
-@import "guide"; 
-
+@import "guide";
+@import "apply";
+@import "intro";
 // 네비게이션 스타일
 nav {
 
@@ -55,12 +56,7 @@ nav {
 
 // 메인 컨텐츠 스타일f
 main {
-    .intro-video {
-        width: 95%;
-        height: 400px;
-        background-color: #f0f0f0;
-        border: 1px solid #000;
-    }
+
 }
 
 // 푸터 스타일
