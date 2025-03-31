@@ -4,6 +4,7 @@ MetaSejong Embodied AI competition project page
 # Version History
 
 - V0.1-R20250314-R01 작성을 위한 초안 템플릿 
+- V0.9-R20250330-04 프로젝트 가이드와 지원 Form, 개발자 가이드 분리
 
 
 # Clean up and Test 
