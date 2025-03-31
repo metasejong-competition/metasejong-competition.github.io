@@ -53,5 +53,16 @@
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. {{ t.footer.copyright }}</p>
     </footer>
+    <script>
+      function handleMissionClick(stage) {
+        // 모든 stage-item 요소를 숨김
+        document.querySelectorAll('.stage-item').forEach(item => {
+          item.style.display = 'none';
+        });
+        
+        // 선택된 stage-item만 표시
+        document.querySelector('.' + stage).style.display = 'block';
+      }
+    </script>
 </body>
 </html> 

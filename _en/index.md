@@ -60,9 +60,9 @@ permalink: /en/
 
   <h3>{{ mission.text-2 }}</h3>
   <ul class="mission-selector">
-    <li>{{ mission.stage-label.stage-1 }}</li>
-    <li>{{ mission.stage-label.stage-2 }}</li>
-    <li>{{ mission.stage-label.stage-3 }}</li>
+    <li><button onclick="handleMissionClick('stage-1')">{{ mission.stage-label.stage-1 }}</button></li>
+    <li><button onclick="handleMissionClick('stage-2')">{{ mission.stage-label.stage-2 }}</button></li>
+    <li><button onclick="handleMissionClick('stage-3')">{{ mission.stage-label.stage-3 }}</button></li>
   </ul>
 
   <div class="stage-details">
@@ -70,7 +70,7 @@ permalink: /en/
       {% assign stage-key = 'stage-' | append: forloop.index %}
       {% assign stage-item = mission.stage-content[stage-key] %}
 
-      <div class="stage-item">
+      <div class="stage-item {{ stage-key }}">
         <h4>{{ stage-item.label }}</h4>
         <p>{{ stage-item.description }}</p>
         <div class="media-block">
