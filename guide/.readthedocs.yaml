@@ -6,8 +6,16 @@ build:
     python: "3.9"
 
 sphinx:
-  configuration: guide/docs/conf.py
+  configuration: docs/conf.py
 
 python:
   install:
-    - requirements: guide/requirements.txt 
+    - requirements: guide/requirements.txt
+
+# 다국어 지원 설정
+locales:
+  - ko
+  - en
+
+# 기본 언어 설정
+default_locale: ko 

@@ -188,3 +188,8 @@ home:
         name: "Korea Electronics Technology Institute"
         image: "sponsor-keti.png"
         link: "https://keti.re.kr"
+
+apply:
+  title: "META-SEJONG AI Robotics Challenge Apply"
+  content:
+    text-1: "The competition aims to promote the advancement of Embodied AI technology for robots in a virtual environment. Participants must integrate various technological components applicable to robots to perform specific missions in the given virtual environment. These technologies will be developed and tested in a simulation environment before being effectively utilized in real-world settings."
