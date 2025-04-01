@@ -7,6 +7,9 @@ build:
 
 sphinx:
   configuration: docs/conf.py
+  fail_on_warning: false
+  languages: ["ko", "en"]
+  default_language: "ko"
 
 python:
   install:
