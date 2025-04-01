@@ -6,13 +6,22 @@ build:
     python: "3.9"
 
 sphinx:
-  configuration: docs/conf.py
+  configuration: guide/docs/conf.py
   fail_on_warning: false
-  languages: ["ko", "en"]
 
 python:
   install:
     - requirements: guide/requirements.txt
+
+# Build documentation in all languages
+formats:
+  - htmlzip
+  - pdf
+
+# Languages
+languages:
+  en: guide/docs
+  ko: guide/docs/locale/ko
 
 # 다국어 지원 설정
 locales:
@@ -20,4 +29,4 @@ locales:
   - en
 
 # 기본 언어 설정
-default_locale: ko 
+default_locale: en 
