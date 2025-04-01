@@ -4,6 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.9"
+  jobs:
+    pre_build:
+      - pip install sphinx-intl
+      - sphinx-intl update -p _build/gettext -l ko
 
 sphinx:
   configuration: guide/docs/conf.py
@@ -17,11 +21,6 @@ python:
 formats:
   - htmlzip
   - pdf
-
-# Languages
-languages:
-  en: guide/docs
-  ko: guide/docs/locale/ko
 
 # 다국어 지원 설정
 locales:

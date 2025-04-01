@@ -31,9 +31,15 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # 다국어 설정
-language = 'ko'
+language = 'en'
 locale_dirs = ['locale/']
 gettext_compact = False
+gettext_uuid = True
+gettext_location = True
+gettext_additional_targets = ['literal-block', 'image']
+
+# 지원하는 언어 목록
+languages = ['en', 'ko']
 
 # 다국어 지원을 위한 설정
 html_theme_options = {
