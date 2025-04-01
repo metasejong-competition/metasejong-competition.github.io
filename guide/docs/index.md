@@ -23,6 +23,7 @@ META-SEJONG AI Robotics Challenge에 오신 것을 환영합니다. 이 가이�
 - [대회 규칙](rules.md) - 대회 규칙 및 평가 기준
 - [기술 가이드](technical-guide.md) - 기술적 세부사항 및 구현 방법
 - [API 참조](api-reference.md) - 사용 가능한 API 및 사용법
+- [제출](submit-guide.md) - 결과물의 제출
 - [FAQ](faq.md) - 자주 묻는 질문
 
 ## 지원
