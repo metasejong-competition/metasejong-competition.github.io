@@ -7,8 +7,8 @@ build:
   jobs:
     pre_build:
       - pip install sphinx-intl
-      - cd docs && sphinx-build -b gettext . _build/gettext
-      - sphinx-intl update -p docs/_build/gettext -l ko
+      - sphinx-build -b gettext docs _build/gettext
+      - sphinx-intl update -p _build/gettext -l ko
 
 sphinx:
   configuration: guide/docs/conf.py
