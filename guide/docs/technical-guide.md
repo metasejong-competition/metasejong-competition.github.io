@@ -1,129 +1,62 @@
-# Technical Guide
+# 기술 가이드
 
-This guide provides detailed technical information for implementing your solution in the META-SEJONG AI Robotics Challenge.
+## 환경 설정
 
-## Environment Setup
+### 시스템 요구사항
+- NVIDIA GPU (최소 8GB VRAM)
+- 16GB RAM
+- 50GB 디스크 공간
+- Ubuntu 20.04 LTS 또는 Windows 10
 
-### Virtual Environment
+### 가상 환경
+- Isaac Sim 기반
+- ROS2 Humble
+- Python 3.9+
 
-The META-SEJONG virtual environment is based on Isaac Sim and provides the following features:
+## 로봇 사양
 
-- Realistic physics simulation
-- High-quality graphics rendering
-- ROS2 integration
-- Custom robot models and environments
+### 하드웨어
+- 모바일 베이스
+- 로봇 팔
+- RGB-D 카메라
+- 다양한 센서
 
-### System Requirements
+### 소프트웨어 인터페이스
+- ROS2 기반 통신
+- Python API 제공
 
-- NVIDIA GPU with CUDA support
-- 16GB RAM minimum
-- 50GB free disk space
-- Ubuntu 22.04 LTS (recommended)
+## 미션 단계
 
-## Robot Specifications
+### Stage 1: 객체 인식
+- 입력: RGB-D 이미지
+- 출력: 객체 위치와 종류
 
-### Hardware
-
-- Mobile base with differential drive
-- Robotic arm with 6 degrees of freedom
-- RGB-D camera
-- Force/torque sensors
-
-### Software Interface
-
-The robot is controlled through ROS2 topics and services:
-
-```python
-# Example ROS2 topic subscription
-from rclpy.node import Node
-from sensor_msgs.msg import Image
-
-class RobotController(Node):
-    def __init__(self):
-        super().__init__('robot_controller')
-        self.image_sub = self.create_subscription(
-            Image,
-            '/camera/image_raw',
-            self.image_callback,
-            10)
-```
-
-## Mission Stages
-
-### Stage 1: Object Detection
-
-1. **Input**
-   - RGB images from fixed cameras
-   - Camera calibration parameters
-   - Camera pose information
-
-2. **Output**
-   - Detected object locations
-   - Object classifications
-   - Confidence scores
-
-### Stage 2: Path Planning
-
-1. **Input**
-   - Detected object locations
-   - Environment map
-   - Robot current pose
-
-2. **Output**
-   - Optimal path sequence
-   - Waypoint coordinates
-   - Expected execution time
+### Stage 2: 경로 계획
+- 입력: 시작점, 목표점, 장애물 정보
+- 출력: 충돌 없는 경로
 
 ### Stage 3: Pick and Place
+- 입력: 객체 정보, 목표 위치
+- 출력: 로봇 동작 시퀀스
 
-1. **Input**
-   - Planned path
-   - Object locations
-   - Robot state
+## 문제 해결 {#troubleshooting}
 
-2. **Output**
-   - End-effector trajectories
-   - Grasp configurations
-   - Success/failure status
+### 일반적인 문제
+1. 환경 설정 오류
+   - CUDA 버전 확인
+   - ROS2 의존성 검사
+   - Python 패키지 버전 확인
 
-## API Reference
+2. 실행 시 오류
+   - GPU 메모리 부족
+   - 포트 충돌
+   - 권한 문제
 
-For detailed API documentation, see the [API Reference](api-reference.md) section.
+3. 성능 문제
+   - 연산 속도 최적화
+   - 메모리 사용량 관리
+   - 병목 현상 해결
 
-## Best Practices
+## 지원
 
-1. **Code Organization**
-   - Use modular design
-   - Implement proper error handling
-   - Follow PEP 8 style guide
-
-2. **Performance Optimization**
-   - Minimize computational overhead
-   - Use efficient data structures
-   - Implement caching where appropriate
-
-3. **Testing**
-   - Write unit tests
-   - Perform integration testing
-   - Validate with different scenarios
-
-## Troubleshooting
-
-Common issues and solutions:
-
-1. **Environment Setup**
-   - Check CUDA installation
-   - Verify ROS2 dependencies
-   - Update graphics drivers
-
-2. **Runtime Issues**
-   - Monitor system resources
-   - Check ROS2 logs
-   - Validate input data
-
-## Support
-
-For technical support:
-- Check the [FAQ](faq.md)
-- Contact the competition organizers
-- Use the provided issue tracker 
+문제가 발생하면 대회 운영진에게 연락하거나 GitHub 이슈를 생성해 주세요. 

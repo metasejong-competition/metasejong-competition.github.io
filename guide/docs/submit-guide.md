@@ -1,76 +1,36 @@
-# Competition Rules
+# 결과물의 제출
 
-This document outlines the rules and guidelines for the META-SEJONG AI Robotics Challenge.
+## 참가 신청 방법
 
-## General Rules
+1. GitHub 저장소를 클론합니다:
+```bash
+git clone https://github.com/your-username/metasejong-competition.git
+```
 
-1. **Eligibility**
-   - Open to all individuals and teams worldwide
-   - No age restrictions
-   - Teams can consist of 1-4 members
+2. 가상환경을 생성하고 활성화합니다:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# 또는
+.\venv\Scripts\activate  # Windows
+```
 
-2. **Registration**
-   - Registration period: April 1, 2025 - April 30, 2025
-   - Submit your registration through the official website
-   - Include team information and contact details
+3. 필요한 패키지를 설치합니다:
+```bash
+pip install -r requirements.txt
+```
 
-3. **Submission**
-   - Deadline: May 30, 2025
-   - Submit your solution through the provided platform
-   - Include all necessary documentation and code
+4. 참가 신청서를 작성하고 제출합니다:
+   - `submissions` 디렉토리에 팀 이름으로 새 폴더를 생성합니다
+   - `README.md` 파일에 팀 정보와 접근 방법을 작성합니다
+   - Pull Request를 생성하여 제출합니다
 
-## Technical Requirements
+## 제출 가이드라인
 
-1. **Environment**
-   - Use the provided META-SEJONG virtual environment
-   - Follow the technical specifications in the [Technical Guide](technical-guide.md)
+- 팀당 하나의 Pull Request만 제출할 수 있습니다
+- 제출 기한은 2025년 5월 30일까지입니다
+- 제출된 코드는 MIT 라이선스로 공개됩니다
 
-2. **Code Requirements**
-   - Must be written in Python
-   - Must use ROS2 for robot control
-   - Must follow the provided API specifications
+## 문의
 
-3. **Documentation**
-   - Include detailed documentation of your approach
-   - Provide clear instructions for running your solution
-   - Document any assumptions or limitations
-
-## Evaluation Criteria
-
-1. **Performance Metrics**
-   - Accuracy of object detection
-   - Efficiency of path planning
-   - Success rate of pick-and-place operations
-
-2. **Code Quality**
-   - Code organization and readability
-   - Documentation quality
-   - Error handling
-
-3. **Innovation**
-   - Novel approaches to problem-solving
-   - Efficient use of resources
-   - Creative solutions
-
-## Awards
-
-1. **Prizes**
-   - First Place: $5,000
-   - Second Place: $3,000
-   - Third Place: $1,000
-
-2. **Recognition**
-   - Winners will be announced on June 16, 2025
-   - Winners will present their solutions at IEEE Metacom 2025
-
-## Disqualification
-
-Participants may be disqualified for:
-- Plagiarism
-- Violation of competition rules
-- Unethical behavior
-- Attempting to manipulate the evaluation system
-
-## Contact
-
-For questions about the rules, please contact the competition organizers. 
+참가 신청과 관련하여 문의사항이 있으시면 대회 운영진에게 연락해 주세요. 
