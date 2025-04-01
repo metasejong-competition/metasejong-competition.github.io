@@ -7,7 +7,8 @@ build:
   jobs:
     pre_build:
       - pip install sphinx-intl
-      - sphinx-intl update -p _build/gettext -l ko
+      - cd docs && sphinx-build -b gettext . _build/gettext
+      - sphinx-intl update -p docs/_build/gettext -l ko
 
 sphinx:
   configuration: guide/docs/conf.py
@@ -21,11 +22,3 @@ python:
 formats:
   - htmlzip
   - pdf
-
-# 다국어 지원 설정
-locales:
-  - ko
-  - en
-
-# 기본 언어 설정
-default_locale: en 
