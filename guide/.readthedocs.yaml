@@ -11,13 +11,16 @@ build:
       - cd docs && sphinx-build -b gettext . ../_build/gettext
       - sphinx-intl update -p _build/gettext -l ko
 
+checkout:
+  path: guide
+
 sphinx:
-  configuration: guide/docs/conf.py
+  configuration: docs/conf.py
   fail_on_warning: false
 
 python:
   install:
-    - requirements: guide/requirements.txt
+    - requirements: requirements.txt
 
 # Build documentation in all languages
 formats:
