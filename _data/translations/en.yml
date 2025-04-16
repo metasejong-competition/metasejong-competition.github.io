@@ -2,16 +2,16 @@ nav:
   home: "Home"
   intro: "Introduction"
   mission: "Mission"
-  award: "Award"
+  award: "Awards"
   timeline: "Timeline"
-  sponsor: "Sponsor"
+  sponsor: "Sponsors"
   guide: "Developer Guide"
   apply: "Apply"
-  notice-badge: "In preparation. Official announcement pending."
+  notice-badge: "Coming Soon. Not officially announced yet."
 footer:
   copyright: "All rights reserved."
 lang:
-  ko: Korean
+  ko: 한국어
   en: English
 home:
   event:
@@ -21,164 +21,157 @@ home:
   intro-section:
     title: "Introduction"
     content:
-      text-1: "The competition aims to promote the advancement of Embodied AI technology for robots in a virtual environment. Participants must integrate various technological components applicable to robots to perform specific missions in the given virtual environment. These technologies will be developed and tested in a simulation environment before being effectively utilized in real-world settings."
-      text-2: "The competition challenges participants to learn and deploy Embodied AI systems for robots in the 'META-SEJONG' virtual environment developed by Sejong University."
-      text-3: "The main task focuses on controlling an autonomous mobile robot equipped with a robotic arm to identify, classify, and collect various objects scattered within the environment."
-      text-4: "The entire mission consists of three stages, with the results of the previous stage serving as input for the next stage. Participant teams can choose the stages they are capable of performing according to their capabilities. Do not feel challenged by the need to perform all stages. The three stages of the mission are as follows:"
-      text-4-1: "Stage 1: Analyze fixed camera (CCTV) information and video data installed in the META-SEJONG virtual environment to identify discarded waste and calculate the location of the identified waste."
-      text-4-2: "Stage 2: Analyze the optimal movement path to effectively collect the waste identified in Stage 1 and send movement commands to the robot."
-      text-4-3: "Stage 3: Use the robotic arm to pick up waste and place it in the appropriate waste container according to the waste type."
+      text-1: "This competition aims to promote the advancement of Embodied AI technology for robots in virtual environments. Participants must integrate various technical components applicable to robots to perform specific tasks in a given virtual environment. These technologies will be developed and tested in simulation environments before being effectively utilized in real-world settings."
+      text-2: "The competition challenges participants to learn and deploy embodied AI systems for robots in the 'META-SEJONG' virtual environment developed by Sejong University."
+      text-3: "The main task focuses on controlling an autonomous mobile robot equipped with a robotic arm to identify, classify, and collect various objects scattered throughout the environment."
+      text-4: "The entire mission consists of 3 stages, where the results of the previous stage's mission are used as input for the next stage. Participating teams can choose stages that match their capabilities to participate in the competition. You don't have to complete all stages, so don't be discouraged. The three stages of the mission are as follows:"
+      text-4-1: "Stage 1: Analyze information and video data from fixed cameras (CCTV) installed in the META-SEJONG virtual environment to identify abandoned waste and calculate its location"
+      text-4-2: "Stage 2-1: Analyze the optimal movement path to effectively collect waste identified in Stage 1 and send movement commands to the robot"
+      text-4-3: "Stage 2-2: Perform the task of picking up waste using the robotic arm and placing it in the appropriate waste container based on waste type"
 
   mission-section:
     title: "Mission"
     content:
-      text-1: "This section provides a detailed description of the missions that participants must perform in this competition. As explained in the introduction section, the mission consists of three stages."
+      text-1: "This section provides detailed explanations of the tasks that participants must perform through this competition. As explained in the introduction section, the mission consists of a total of 2 stages."
       text-2: "Mission Stages"
       stage-label:
         stage-1: "Stage 1"
-        stage-2: "Stage 2"
-        stage-3: "Stage 3"
+        stage-2: "Stage 2-1"
+        stage-3: "Stage 2-2"
       stage-content:
         stage-1: 
           label: "Stage 1"
-          description : "Video footage and information from CCTV cameras installed in the virtual environment are provided as ROS2 messages. Participants must use video object recognition technology to identify the location of discarded waste in the virtual environment from the camera footage. The identified waste location should be converted into coordinates in the virtual environment by integrating camera specs, installation location, etc. In Stage 1, the accuracy of inferring the location and type of discarded waste is evaluated by applying video analysis technology."
+          description: "Video footage from CCTV cameras installed in the virtual environment and information about the CCTV cameras are provided as ROS2 messages. Participants must use image object recognition technology to identify the location of abandoned waste in the environment from the camera footage. The identified waste location must be converted into coordinates in the virtual environment by combining it with information such as camera specifications and installation location. In Stage 1, the accuracy of inferring the location and type of abandoned waste by applying image analysis technology is evaluated."
           media:
             media-1:
               type: image
               url: "/assets/images/mission-objects.png"
               subtitle: "Types of Waste to Analyze"
-              _comment: "Images of types that should be classified as waste and those that should not be classified as waste are placed on the left/right."
+              _comment: "Place images of types that should be classified as waste on the left and types that should not be classified as waste on the right"
             media-2:
               type: image
               url: "/assets/images/mission-object-detection.png"
-              subtitle: "Object Recognition in Video"
-              _comment: "Bounding box indicating waste location in camera view."
+              subtitle: "Object Detection in Video"
+              _comment: "Display bounding box on waste location in camera view"
             media-3: 
               type: image
               url: "/assets/images/mission-camera-info.png"
               subtitle: "Camera Information"
-              _comment: "Display camera info content with ROS2 topic echo."
+              _comment: "Display camera info content using ROS2 topic echo"
             media-4:
               type: video
               url: "/assets/video/mission-object-detection.webm"
               subtitle: "Identifying Waste Location through CCTV Footage"
-              _comment: "A video looping snapshot images showing bounding boxes of detected objects and inferred location values."
+              _comment: "Video showing snapshots of detection results with object bounding boxes and inferred object position values"
           dataset:
             dataset-1: 
-              title: "Dataset for Object Recognition Training <<< IsaacSim for participants to train on their own"
-              description: "Dataset for training AI models for object recognition and location calculation of waste. Provides images of scenes with various forms of discarded situations, camera information that captured the images, waste types, and location information as a dataset."
+              title: "Dataset for Object Recognition and Pose Estimation"
+              description: "We provide a dataset for training AI models for object recognition and position calculation of waste. Various methods for simulating abandoned situations are presented, and through these methods, you can obtain camera information and image data streamed via ROS2 from IsaacSim."
               type: "download"
               download_url: "https://drive.google.com/xxxxx"
               data_schema: "image url"
             dataset-2:
               title: "Camera Footage"
-              description: "Video footage captured by CCTV is provided as ROS2 topics. The dataset for training AI models for waste location calculation includes images of scenes with various forms of discarded situations, camera information that captured the images, waste types, and location information."
+              description: "Footage from CCTV is provided as ROS2 topics. Waste location information is provided as a dataset for training AI models for waste location calculation. Images of scenes with various abandoned situations, camera information, waste types, and location information are provided as a dataset."
               type: "ros2"
-              ros2_topic: "/fixedcam_{x}/rgb/image_raw"
+              ros2_topic: "/metasejong2025/cameras/{x}/rgb/image_raw"
               ros2_message_type: "sensor_msgs/msg/Image"
             dataset-3: 
               title: "Camera Information"
-              description: "CCTV camera characteristics and installation attribute information provided as ROS2 topics. Necessary for calculating the location in the 3D virtual space from the bounding box of object recognition results."
+              description: "CCTV camera characteristics and installation properties provided as ROS2 topics. Required for calculating 3D spatial position from object recognition result bounding boxes."
               type: "ros2"
-              ros2_topic: "/fixedcam_{x}/camera_info"
+              ros2_topic: "/metasejong2025/cameras/{x}/camera_info"
               ros2_message_type: "sensor_msgs/msg/CameraInfo"
           output:
-            text-1: "The goal is to analyze the location of waste from streaming video from one or more CCTVs installed in the given virtual space, obtaining classification types of various discarded waste and inferred location values for each waste."
-            text-2: "The purpose of this stage is to infer a movement path to collect as much waste as possible within the given time based on the inferred result data."
-            text-3: "After completing this stage, participants who wish to proceed to the next stage can request robot movement commands to the platform with the inferred results, targeting the location of the waste in order. Robot movement commands are requested as ROS2 messages, and detailed information about the messages is explained in the dataset of the next stage."
+            text-1: "The goal is to analyze the location of waste from video streamed from one or more CCTV cameras installed in the given virtual space, and obtain classification types and inferred position values for multiple pieces of abandoned waste."
+            text-2: "Based on the inferred result data, the purpose of this stage is to infer a movement path to collect as much waste as possible within the given time."
+            text-3: "After completing this stage, participants who wish to proceed to the next stage can request robot movement commands to the platform, using the inferred waste locations as destinations. Robot movement commands are requested via ROS2 messages, and detailed information about the messages is explained in the next stage's dataset."
           evaluation:
-            text-1: "Evaluate the accuracy of object recognition, classification, and location recognition. 10 points are awarded for each correctly recognized result of the object's type and location, with the following deductions and bonuses applied."
-            text-2: "Deductions"
-            text-2-1: "-2 for each classification error"
-            text-2-2: "-2 for location error over 50cm"
-            text-3: "Bonuses"
-            text-3-1: "Teams within the top 10% of participants in terms of inference time receive an additional 2 points for each correctly recognized result."
-            text-3-2: "Teams within the top 30% of participants in terms of inference time receive an additional 1 point for each correctly recognized result."
+            text-1: "Evaluates the accuracy of object recognition, classification, and position recognition. 10 points are awarded for each result where the object type and location are accurately recognized."
           
         stage-2: 
-          label: "Stage 2"
-          description : "Only participants who have succeeded in Stage 1 can participate in Stage 2 using the inference results from Stage 1. Evaluate whether participants can design a movement path that minimizes the total movement path based on the waste location information inferred in Stage 1. The evaluation is calculated differently depending on whether the goal is up to Stage 2 or Stage 3. If only performing up to Stage 2, participants submit the results including the order of locations the robot should visit based on the inferred waste locations, and the host's implemented robot performs the movement in the submitted order, evaluated based on the total movement distance and time. If performing up to Stage 3, the evaluation for Stage 2 is performed based on the total movement distance and time excluding the time for performing the Stage 3 mission (Pick&Place). Detailed scoring methods are explained below."
+          label: "Stage 2-1"
+          description: "Only participants who have successfully completed Stage 1 can participate in Stage 2 using the Stage 1 inference results. Based on the waste location information inferred in Stage 1, design a movement path that minimizes the total movement path and evaluate the process of collecting all objects through robot arm control within the time limit."
           media:
             media-1:
               type: image
               url: "/assets/images/mission-occupancy-map.png"
-              subtitle: "Occupancy Map for Path Design"
-              _comment: "To inform that an occupancy map is provided for path design, an occupancy map image of one of the test environments is displayed."
+              subtitle: "Occupancy Map for Path Planning"
+              _comment: "Show an occupancy map image for one location in the test environment to indicate that occupancy maps are provided for path planning"
             media-2:
               type: video
               url: "/assets/video/mission-navigation.webm"
-              subtitle: "Example of Navigation Using SLAM"
-              _comment: "Use the SLAM navigation part from the intro video."
+              subtitle: "Navigation Example using SLAM"
+              _comment: "Use the SLAM navigation part from the intro video"
           dataset:
             dataset-1: 
               title: "Occupancy Map"
-              description: "Global occupancy map data for designing robot navigation paths."
+              description: "Global occupancy map data for robot navigation path planning"
               type: "mapserver"
             dataset-2: 
-              robot 관련 topic이 공개되니 표준 nav topic들 사용하는것으로 가이드
+              _comment: "Robot-related topics will be published, so guide using standard nav topics"
           output:
-            text-1: "Movement path visiting all extracted waste locations."
+            text-1: "Movement path that visits all extracted waste locations"
           evaluation:
-            text-1: "The evaluation goal of Stage 2 is to design a movement path that minimizes the total movement time for collecting all inferred waste in the given environment. However, since participants will collect different numbers of waste based on the inference results of Stage 1, an evaluation criterion considering this situation is necessary."
-            text-2: "Therefore, in this competition, the host's implemented robot is moved along the designed movement path by each participant, and the average movement time between nodes is calculated. The calculated value is multiplied by the actual number of given waste to obtain a converted value as the standard value, and scores are awarded as follows based on ranking."
-            text-3: "1st place: 100 points / 2nd place: 70 points / 3rd to 5th place: 50 / Below 6th place: 20 points"
-            text-3-comment: "Since it needs to be counted in real-time during execution, it is impossible to count in real-time based on relative scores. Another method needs to be found."
-            text-4: "Bonuses"
-            text-4-1: "If the number of successfully inferred waste is 90% or more of the given total waste, 10 points are awarded / If 80% or more, 5 points are awarded."
+            text-1: "The evaluation goal of Stage 2 is to effectively perform the mission by designing an optimal movement path within the given time to collect all inferred waste in the given environment."
+            text-2: "Therefore, in this competition, the average movement time between nodes is calculated by moving the robot implemented by the organizers according to the movement path designed by each participant, and points are awarded based on ranking as follows, using the value multiplied by the total number of given waste as the standard value."
+            text-3: "1st place: 100 points / 2nd place: 70 points / 3rd-5th place: 50 points / 6th place and below: 20 points"
+            text-4: "Bonus Points"
+            text-4-1: "10 points if the number of successfully inferred waste is 90% or more of the total given waste / 5 points if 80% or more"
         stage-3: 
-          label: "Stage 3"
-          description : "Only participants who have succeeded in Stages 1 and 2 can perform the Stage 3 mission while moving along the path designed in Stage 2. While moving along the path designed in Stage 2, participants perform the task of picking up and classifying waste using the camera and robot arm mounted on the robot. The evaluation assesses how many pieces of waste were successfully collected. However, note that the longer it takes to collect waste, the more deductions may occur."
+          label: "Stage 2-2"
+          description: "Only participants who have successfully completed Stage 1 and Stage 2 can perform Stage 3 missions while moving along the path designed in Stage 2. After arriving at each node while moving along the path designed in Stage 2, perform the task of picking up waste using the camera and robotic arm mounted on the robot and classifying it. The evaluation assesses how many pieces of waste were successfully collected. Note that longer collection times may result in point deductions."
           media:
             media-1:
               type: video
               url: "/assets/video/mission-pickplace.webm"
               subtitle: "Robot Movement Video"
-              _comment: "Since calculating the relative coordinates of the target object with the robot using camera footage is an evaluation factor, a video showing the target object visible to the camera when the robot moves."
+              _comment: "Video showing pick&place target objects visible in the camera while the robot is moving, as calculating relative coordinates between the robot and target objects using camera footage is an evaluation factor"
             media-2:
               type: video
               url: "/assets/video/mission-pickplace-2.webm"
-              subtitle: "Pick&Place Video with Robot Arm"
-              _comment: "Perform the task of picking up waste with the robot arm and placing it in the appropriate waste container according to the waste type."
+              subtitle: "Pick&Place Video with Robotic Arm"
+              _comment: "Perform the task of picking up waste using the robotic arm and placing it in the appropriate waste container based on waste type"
           dataset:
             dataset-1:
               title: "Robot Camera Footage"
-              description: "3D model data of waste to be collected."
+              description: "3D model data of waste collection targets"
               type: "ros"
               download_url: "https://drive.google.com/xxxxx"
             dataset-3:
               title: "Robot Camera Footage"
            
           output:
-            text-1: "End-point coordinates and entry angle of the robot arm for the robot to pick."
+            text-1: "End-point coordinates and approach angle of the robotic arm to enable the robot to perform pick operations"
               
           evaluation:
-            text-1: "Evaluate the accuracy of object recognition, classification, and pick&place actions. 10 points are awarded for each correctly collected result, with the following deductions and bonuses applied."
-            text-2: "Deductions"
-            text-2-1: "-2 for each pick&place taking more than xxx minutes"
+            text-1: "Evaluates the accuracy of object recognition, classification, and pick&place actions. 10 points are awarded for each accurately collected result, and the following bonus and penalty points are applied."
+            text-2: "Penalties"
+            text-2-1: "-2 points per item that takes more than xxx minutes to pick&place"
 
   award-section:
-    title: "Award"
-    content: "The top x ranked teams are given the opportunity to present at the Challenge session of the IEEE Metacom 2025 event."
+    title: "Awards"
+    content: "Top x ranked teams will be given the opportunity to present at the Challenge session of the IEEE Metacom 2025 event."
 
   timeline-section:
-    title: "Event Timeline"
+    title: "Event Schedule"
     content: 
       timeline-1:
-        date: "April 1, 2025 ~ April 30, 2025"
-        description: "Participant Recruitment"
+        date: " ~ April 30"
+        description: "Participant Recruitment (Application deadline at 24:00 UTC)"
       timeline-2:
-        date: "May 30, 2025"
-        description: "Submission Deadline"
-      timeline-3:
         date: "June 16, 2025"
-        description: "Winners Announcement"
+        description: "Submission Deadline (Submission deadline at 24:00 UTC)"
+      timeline-3:
+        date: "June 30, 2025"
+        description: "Winner Announcement"
       timeline-4:
-        date: "August 27, 2025 ~29, 2025"
-        description: "IEEE Metacom 2025 (Sejong University)"
+        date: "August 27-29, 2025"
+        description: "IEEE Metacom 2025 (Sejong University) & Online"
 
   
   sponsor-section:
-    title: "Sponsor"
+    title: Sponsors
     content: 
       sponsor-1:
         name: "Sejong University"
