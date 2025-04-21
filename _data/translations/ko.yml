@@ -3,8 +3,9 @@ nav:
   intro: "소개"
   mission: "임무"
   award: "시상"
-  timeline: "일정"
+  timeline: "행사 일정"
   sponsor: "후원"
+  organization: "주관"
   guide: "개발자 가이드"
   apply: "참가 신청"
   notice-badge: "준비 중. 공식 공지 전입니다."
@@ -151,7 +152,7 @@ home:
 
   award-section:
     title: "시상"
-    content: "상위에 랭크된 x개의 팀은 IEEE Metacom 2025 행사의 Challenge session에서 발표할 수 있는 기회가 부여됩니다."
+    content: "상위에 랭크된 3개의 팀은 IEEE Metacom 2025 행사의 Challenge session에서 발표할 수 있는 기회가 부여됩니다."
 
   timeline-section:
     title: "행사 일정"
@@ -181,3 +182,15 @@ home:
         name: "Korea Electronics Technology Institute"
         image: "sponsor-keti.png"
         link: "https://keti.re.kr"
+
+  organization-section:
+    title: 주관
+    content: 
+      organization-1:
+        name: "사물인터넷 혁신융합대학사업단"
+        image: "iotcoss-logo.svg"
+        link: "https://www.iotcoss.ac.kr/"
+      organization-2:
+        name: "세종대학교"
+        image: "sponsor-sejonguniv.png"
+        link: "http://sejong.ac.kr/"

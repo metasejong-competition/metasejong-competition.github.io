@@ -5,6 +5,7 @@ nav:
   award: "Awards"
   timeline: "Timeline"
   sponsor: "Sponsors"
+  organization: "Organized by"
   guide: "Developer Guide"
   apply: "Apply"
   notice-badge: "Coming Soon. Not officially announced yet."
@@ -181,6 +182,20 @@ home:
         name: "Korea Electronics Technology Institute"
         image: "sponsor-keti.png"
         link: "https://keti.re.kr"
+
+  organization-section:
+    title: Organized by
+    content: 
+      organization-1:
+        name: "IoT Convergence & Open Sharing System"
+        image: "iotcoss-logo.svg"
+        link: "https://www.iotcoss.ac.kr/"
+      organization-2:
+        name: "Sejong University"
+        image: "sponsor-sejonguniv.png"
+        link: "http://sejong.ac.kr/"
+
+
 
 apply:
   title: "META-SEJONG AI Robotics Challenge Apply"
