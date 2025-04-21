@@ -39,16 +39,13 @@ permalink: /ko/
 
   <div class="links">
     <div class="link-button">
-      <a href="https://github.com/metasejong-competition/metacom2025"><i class="fab fa-github"></i> Code</a>
+      <a href="https://github.com/metasejong-competition/metacom2025-metasejong"><i class="fab fa-github"></i> MetaSejong Platform</a>
     </div>
     <div class="link-button">
-      <a href=""><i class="fas fa-book"></i> Docs</a>
+      <a href="https://github.com/metasejong-competition/metasejong-airobotics"><i class="fab fa-github"></i> Demo Application</a>
     </div>
     <div class="link-button">
-      <a href=""><i class="fas fa-database"></i> Data</a>
-    </div>
-    <div class="link-button">
-      <a href=""><i class="fas fa-video"></i> Video</a>
+      <a href="https://metasejong-competition.readthedocs.io"><i class="fas fa-book"></i> Developer Guide</a>
     </div>
   </div>
 </section>
