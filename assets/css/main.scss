@@ -8,6 +8,8 @@
 @import "guide";
 @import "apply";
 @import "intro";
+@import "navigation";
+
 // 네비게이션 스타일
 nav {
 
@@ -24,6 +26,21 @@ nav {
             &:hover {
                 color: #0366d6;
             }
+        }
+
+        a.active-link {
+            color: #0366d6;
+            font-weight: 600;
+        }
+
+        .nav-link-container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link-container.right-align {
+            margin-left: auto;
+            justify-content: flex-end;
         }
     }
 

@@ -24,7 +24,6 @@ permalink: /ko/
     <li>{{ intro.text-4-1 }}</li>
     <li>{{ intro.text-4-2 }}</li>
     <li>{{ intro.text-4-3 }}</li>
-    <li>{{ intro.text-4-4 }}</li>
   </ul>
 
   <p>{{ intro.text-5 }}</p>
