@@ -23,7 +23,6 @@ permalink: /en/
   <ul>
     <li>{{ intro.text-4-1 }}</li>
     <li>{{ intro.text-4-2 }}</li>
-    <li>{{ intro.text-4-3 }}</li>
   </ul>
 
   <p>{{ intro.text-5 }}</p>
@@ -56,9 +55,9 @@ permalink: /en/
 
   <h3>{{ mission.text-2 }}</h3>
   <ul class="mission-selector">
-    <li><button onclick="handleMissionClick('stage-1')">{{ mission.stage-label.stage-1 }}</button></li>
-    <li><button onclick="handleMissionClick('stage-2')">{{ mission.stage-label.stage-2 }}</button></li>
-    <li><button onclick="handleMissionClick('stage-3')">{{ mission.stage-label.stage-3 }}</button></li>
+    <li><button class="stage-button" onclick="handleMissionClick('stage-1')">{{ mission.stage-label.stage-1 }}</button></li>
+    <li><button class="stage-button"  onclick="handleMissionClick('stage-2')">{{ mission.stage-label.stage-2 }}</button></li>
+    <li><button class="stage-button"  onclick="handleMissionClick('stage-3')">{{ mission.stage-label.stage-3 }}</button></li>
   </ul>
 
   <div class="stage-details">
@@ -87,7 +86,7 @@ permalink: /en/
             {% endif %}
               <div class="media-info">
                 <p class="subtitle">{{ media.subtitle }}</p>
-                <p class="comment"><em>{{ media._comment }}</em></p>
+                <!-- <p class="comment"><em>{{ media._comment }}</em></p> -->
               </div>
             </div>
           {% endfor %}
