@@ -1,8 +1,30 @@
-#intro-section {
-    padding: 4rem 0;
+#title-section {
+    margin-top: 1rem;
+    padding: 2rem 0;
     position: relative;
     overflow: hidden;
+    
+    background-image: url('../images/bg_title.png');
+    background-size: cover; 
+    color: #fff;
 
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .title-event a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+#intro-section {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
 
     .intro-video {
         flex: 1;

@@ -157,17 +157,14 @@ home:
     title: "Event Schedule"
     content: 
       timeline-1:
-        date: " ~ May 15, 2025"
-        description: "Participant Recruitment (Application deadline at 24:00 UTC)"
-      timeline-2:
-        date: "June 16, 2025"
-        description: "Preliminary Results Submission Deadline (Submission deadline at 24:00 UTC)"
-      timeline-3:
         date: "June 30, 2025"
-        description: "Announcement of Preliminary Qualifiers"
-      timeline-4:
+        description: "Submission Deadline (24:00 UTC)"
+      timeline-2:
+        date: "July 15, 2025"
+        description: "Winners Announcement"
+      timeline-3:
         date: "August 27-29, 2025"
-        description: "Final Round and Workshop Paper Presentation: IEEE Metacom 2025 (Sejong University)"
+        description: "IEEE Metacom 2025 (Sejong University)"
 
   
   sponsor-section:

@@ -157,17 +157,14 @@ home:
     title: "행사 일정"
     content: 
       timeline-1:
-        date: " ~ 2025년 5월 15일"
-        description: "참가자 모집 (UTC 시간을 기준으로 24:00 신청 마감)"
-      timeline-2:
-        date: "2025년 6월 16일"
-        description: "예선 결과물 제출 마감 (UTC 시간을 기준으로 24:00 제출 마감)"
-      timeline-3:
         date: "2025년 6월 30일"
-        description: "예선 통과 대상자 발표"
-      timeline-4:
+        description: "결과물 제출 마감 (UTC 시간을 기준으로 24:00 제출 마감)"
+      timeline-2:
+        date: "2025년 7월 15일"
+        description: "수상팀 발표"
+      timeline-3:
         date: "2025년 8월 27일 ~ 29일"
-        description: "본선 및 논문 발표 : IEEE Metacom 2025(세종대학교)"
+        description: "IEEE Metacom 2025(세종대학교)"
 
   
   sponsor-section:
