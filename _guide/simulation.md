@@ -8,7 +8,7 @@ permalink: /guide/simulation/
 
 ## 시뮬레이션 환경 소개
 
-META-SEJONG AI Robotics Challenge는 NVIDIA Isaac Sim을 기반으로 한 가상 환경에서 진행됩니다. 이 환경은 실제 로봇과 유사한 물리적 특성과 센서 데이터를 제공하며, 다양한 태스크를 수행할 수 있는 시뮬레이션 환경을 제공합니다.
+MARC(Meta-Sejong AI Robotics Challenge) 2025는 NVIDIA Isaac Sim을 기반으로 한 가상 환경에서 진행됩니다. 이 환경은 실제 로봇과 유사한 물리적 특성과 센서 데이터를 제공하며, 다양한 태스크를 수행할 수 있는 시뮬레이션 환경을 제공합니다.
 
 ## 환경 구성
 

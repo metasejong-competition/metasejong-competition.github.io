@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide will help you get started with the META-SEJONG AI Robotics Challenge.
+This guide will help you get started with the MARC(Meta-Sejong AI Robotics Challenge) 2025.
 
 ## Prerequisites
 

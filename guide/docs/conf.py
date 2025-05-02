@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'META-SEJONG AI Robotics Challenge'
-copyright = '2025, META-SEJONG AI Robotics Challenge'
-author = 'META-SEJONG AI Robotics Challenge'
+project = 'MARC(Meta-Sejong AI Robotics Challenge) 2025'
+copyright = '2025, IOTCOSS(Iot Convergence & Open Sharing System)'
+author = 'IOTCOSS(Iot Convergence & Open Sharing System)'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

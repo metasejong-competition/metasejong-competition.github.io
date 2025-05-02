@@ -1,6 +1,6 @@
 ---
 layout: default
-title: META-SEJONG AI Robotics Challenge 참가 신청
+title: MARC(Meta-Sejong AI Robotics Challenge) 2025 참가 신청
 permalink: /ko/apply/
 lang: ko
 ref: apply

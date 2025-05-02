@@ -1,6 +1,6 @@
 # Competition Rules
 
-This document outlines the rules and guidelines for the META-SEJONG AI Robotics Challenge.
+This document outlines the rules and guidelines for the MARC(Meta-Sejong AI Robotics Challenge) 2025.
 
 ## General Rules
 
@@ -22,7 +22,7 @@ This document outlines the rules and guidelines for the META-SEJONG AI Robotics 
 ## Technical Requirements
 
 1. **Environment**
-   - Use the provided META-SEJONG virtual environment
+   - Use the provided Meta-Sejong virtual environment
    - Follow the technical specifications in the [Technical Guide](technical-guide.md)
 
 2. **Code Requirements**

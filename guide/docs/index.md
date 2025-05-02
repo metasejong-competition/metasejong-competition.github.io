@@ -1,4 +1,4 @@
-# META-SEJONG AI Robotics Challenge 가이드
+# MARC(Meta-Sejong AI Robotics Challenge) 2025 가이드
 
 ## 목차
 
@@ -16,7 +16,7 @@ faq
 
 ## 소개
 
-META-SEJONG AI Robotics Challenge에 오신 것을 환영합니다. 이 가이드는 대회 참가를 위한 모든 필요한 정보를 제공합니다.
+MARC(Meta-Sejong AI Robotics Challenge) 2025에 오신 것을 환영합니다. 이 가이드는 대회 참가를 위한 모든 필요한 정보를 제공합니다.
 
 ## 시작하기
 

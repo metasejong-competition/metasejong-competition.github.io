@@ -1,11 +1,11 @@
 # Frequently Asked Questions (FAQ)
 
-This section provides answers to common questions about the META-SEJONG AI Robotics Challenge.
+This section provides answers to common questions about the MARC(Meta-Sejong AI Robotics Challenge) 2025.
 
 ## General Questions
 
-### Q: What is the META-SEJONG AI Robotics Challenge?
-A: The META-SEJONG AI Robotics Challenge is a competition focused on developing embodied AI systems for robots in a virtual environment. Participants are required to implement solutions for object detection, path planning, and pick-and-place operations.
+### Q: What is the MARC(Meta-Sejong AI Robotics Challenge) 2025?
+A: The MARC(Meta-Sejong AI Robotics Challenge) 2025 is a competition focused on developing embodied AI systems for robots in a virtual environment. Participants are required to implement solutions for object detection, path planning, and pick-and-place operations.
 
 ### Q: Who can participate?
 A: The competition is open to all individuals and teams worldwide. Teams can consist of 1-4 members.

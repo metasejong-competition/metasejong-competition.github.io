@@ -8,7 +8,7 @@ permalink: /guide/getting-started/
 
 ## 소개
 
-META-SEJONG AI Robotics Challenge는 가상 환경에서 로봇을 위한 체화 인공지능(Embodied AI) 기술의 발전을 촉진하는 것을 목표로 합니다. 이 가이드는 참가자들이 대회에 참여하고 개발을 시작하는 데 필요한 기본적인 정보를 제공합니다.
+MARC(Meta-Sejong AI Robotics Challenge) 2025는 가상 환경에서 로봇을 위한 체화 인공지능(Embodied AI) 기술의 발전을 촉진하는 것을 목표로 합니다. 이 가이드는 참가자들이 대회에 참여하고 개발을 시작하는 데 필요한 기본적인 정보를 제공합니다.
 
 ## 환경 설정
 

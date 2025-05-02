@@ -8,7 +8,7 @@ permalink: /guide/evaluation/
 
 ## 평가 시스템 소개
 
-META-SEJONG AI Robotics Challenge의 평가 시스템은 로봇의 성능을 객관적으로 측정하고 점수를 산출하는 시스템입니다. 이 시스템은 다양한 메트릭을 사용하여 로봇의 태스크 수행 능력을 평가합니다.
+MARC(Meta-Sejong AI Robotics Challenge) 2025의 평가 시스템은 로봇의 성능을 객관적으로 측정하고 점수를 산출하는 시스템입니다. 이 시스템은 다양한 메트릭을 사용하여 로봇의 태스크 수행 능력을 평가합니다.
 
 ## 평가 메트릭
 

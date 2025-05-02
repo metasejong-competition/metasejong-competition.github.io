@@ -1,6 +1,6 @@
 ---
 layout: default
-title: META-SEJONG AI Robotics Challenge Apply
+title: MARC(Meta-Sejong AI Robotics Challenge) 2025 Apply
 permalink: /en/apply/
 lang: en
 ref: apply

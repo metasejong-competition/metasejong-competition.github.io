@@ -16,17 +16,17 @@ lang:
   en: English
 home:
   event:
-    title: "META-SEJONG AI Robotics Challenge"
-    full_title: "META-SEJONG AI Robotics Challenge 2025"
+    title: "MARC(Meta-Sejong AI Robotics Challenge)"
+    full_title: "MARC(Meta-Sejong AI Robotics Challenge) 2025"
 
   intro-section:
     title: "Introduction"
     content:
       text-1: "This competition aims to promote the advancement of Embodied AI technology for robots in virtual environments. Participants must integrate various technical components applicable to robots to perform specific tasks in a given virtual environment. These technologies will be developed and tested in simulation environments before being effectively utilized in real-world settings."
-      text-2: "The competition challenges participants to learn and deploy embodied AI systems for robots in the 'META-SEJONG' virtual environment developed by Sejong University."
+      text-2: "The competition challenges participants to learn and deploy embodied AI systems for robots in the 'Meta-Sejong' virtual environment developed by Sejong University."
       text-3: "The main task focuses on controlling an autonomous mobile robot equipped with a robotic arm to identify, classify, and collect various objects scattered throughout the environment."
       text-4: "The entire mission consists of 2 stages, where the results of the previous stage's mission are used as input for the next stage. Participating teams can choose stages that match their capabilities to participate in the competition. You don't have to complete all stages, so don't be discouraged. The two stages of the mission are as follows:"
-      text-4-1: "Stage 1: Analyze information and video data from fixed cameras (CCTV) installed in the META-SEJONG virtual environment to identify abandoned waste and calculate its location"
+      text-4-1: "Stage 1: Analyze information and video data from fixed cameras (CCTV) installed in the Meta-Sejong virtual environment to identify abandoned waste and calculate its location"
       text-4-2: "Stage 2: Analyze the optimal movement path to effectively collect waste identified in Stage 1, send movement commands to the robot, and perform the task of picking up waste using the robotic arm and placing it in the appropriate waste container based on waste type"
 
   mission-section:
@@ -151,20 +151,20 @@ home:
 
   award-section:
     title: "Awards"
-    content: "The top 6 teams selected from the preliminary evaluation of submitted results will participate in the finals during the IEEE MetaCom 2025 event. They will also be given the opportunity to present at the Challenge session during the MetaCom 2025 event."
+    content: "Participants must submit the developed code and workshop paper as final deliverables. The winners will be announced based on the combined scores from mission performance through execution and paper review. Winners must present their papers at the conference. Winners will be awarded competition certificates according to their rankings."
 
   timeline-section:
     title: "Event Schedule"
     content: 
       timeline-1:
-        date: "June 30, 2025"
-        description: "Submission Deadline (24:00 UTC)"
+        date: "30 June 2025 (24:00 UTC)"
+        description: "Paper Submission Deadline"
       timeline-2:
-        date: "July 15, 2025"
-        description: "Winners Announcement"
+        date: "30 June 2025 (24:00 UTC)"
+        description: "Final Code Submission Deadline"
       timeline-3:
-        date: "August 27-29, 2025"
-        description: "IEEE Metacom 2025 (Sejong University)"
+        date: "15 July 2025"
+        description: "Winners Announcement"
 
   
   sponsor-section:
@@ -195,6 +195,6 @@ home:
         image: "sponsor-sejonguniv.png"
         link: "http://sejong.ac.kr/"
 apply:
-  title: "META-SEJONG AI Robotics Challenge Apply"
+  title: "MARC(Meta-Sejong AI Robotics Challenge) 2025 Apply"
   content:
     text-1: "The competition aims to promote the advancement of Embodied AI technology for robots in a virtual environment. Participants must integrate various technological components applicable to robots to perform specific missions in the given virtual environment. These technologies will be developed and tested in a simulation environment before being effectively utilized in real-world settings."

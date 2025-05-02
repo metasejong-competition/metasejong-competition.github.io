@@ -10,7 +10,7 @@ permalink: /guide/troubleshooting/
 
 ### 1. 일반적인 질문
 
-#### Q: META-SEJONG AI Robotics Challenge에 참가하기 위한 기본 요구사항은 무엇인가요?
+#### Q: MARC(Meta-Sejong AI Robotics Challenge) 2025에 참가하기 위한 기본 요구사항은 무엇인가요?
 **A**: 다음과 같은 기본 요구사항이 필요합니다:
 - Ubuntu 22.04 LTS 이상
 - NVIDIA GPU (CUDA 11.0 이상 지원)

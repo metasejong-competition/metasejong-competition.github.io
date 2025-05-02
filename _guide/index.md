@@ -4,9 +4,9 @@ title: 개발자 가이드
 permalink: /guide/
 ---
 
-# META-SEJONG AI Robotics Challenge 개발자 가이드
+# MARC(Meta-Sejong AI Robotics Challenge) 2025 개발자 가이드
 
-이 가이드는 META-SEJONG AI Robotics Challenge에 참여하는 개발자들을 위한 문서입니다. 가상 환경에서 로봇을 위한 체화 인공지능(Embodied AI) 기술을 개발하고 평가하는 방법을 안내합니다.
+이 가이드는 MARC(Meta-Sejong AI Robotics Challenge) 2025에 참여하는 개발자들을 위한 문서입니다. 가상 환경에서 로봇을 위한 체화 인공지능(Embodied AI) 기술을 개발하고 평가하는 방법을 안내합니다.
 
 ## 주요 섹션
 

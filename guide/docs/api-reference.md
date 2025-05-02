@@ -1,6 +1,6 @@
 # API Reference
 
-This document provides detailed information about the APIs available in the META-SEJONG AI Robotics Challenge.
+This document provides detailed information about the APIs available in the MARC(Meta-Sejong AI Robotics Challenge) 2025.
 
 ## ROS2 Topics
 
