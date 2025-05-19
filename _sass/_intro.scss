@@ -81,6 +81,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             gap: 1rem;
+            justify-content: space-evenly;
 
             .media-content {
                 display: flex;
@@ -88,13 +89,29 @@
                 gap: 1rem;
 
                 min-width: 300px;
-                min-height: 300px;
+                min-height: 250px;
                 max-width: 350px;
-                max-height: 350px;
+                max-height: 250px;
 
-                border: 1px solid #ccc;
-                border-radius: 12px;
+                // border: 1px solid #ccc;
+                // border-radius: 12px;
                 padding: 1rem;
+
+                .media-info {
+                    width: max-content;
+                    background-color:lightgray;
+                    border-radius: 20px;
+                    padding: 1px 10px;
+                    margin: 0 auto;
+                    font-size: 0.8rem;
+                    color: #666;
+
+                    .subtitle {
+                        font-size: 0.8rem;
+                        color: #000;
+                        margin: 0;
+                    }
+                }
 
                 img {
                     max-width: 300px;
@@ -113,6 +130,39 @@
                     color: #666;
                 }
                 
+                &.double {
+                    min-width: 600px;
+                    max-width: 600px;
+
+                    img {
+                        max-width: 600px;
+                    }
+
+                    video {
+                        max-width: 600px;
+                    }
+                }
+                &.row {
+                    min-width: 100%;
+                    max-width: 100%;
+                    padding: 0;
+                    height: 300px;
+                    max-height: 300px;
+
+                    img {
+                        width: 100%;
+                        height: 250px;
+                        max-width: 90%;
+                        max-height: 250px;
+                        margin: 0 auto;
+                    }
+
+                    video {
+                        max-width: 100%;
+                    }
+                }
+
+
             }
 
         }

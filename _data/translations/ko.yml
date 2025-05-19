@@ -5,7 +5,8 @@ nav:
   award: "시상"
   timeline: "행사 일정"
   sponsor: "후원"
-  organization: "주최"
+  hosting: "주최"
+  organization: "주관"
   guide: "개발자 가이드"
   apply: "참가 신청"
   notice-badge: "준비 중. 공식 공지 전입니다."
@@ -45,6 +46,7 @@ home:
           media:
             media-1:
               type: image
+              wide: row
               url: "/assets/images/mission-objects.png"
               subtitle: "분석 대상 쓰레기 종류"
               _comment: "쓰레기로 분류해야 하는 유형의 이미지와 쓰레기로 분류하지 말아야 하는 유형의 이미지를 구분하여 좌/우측에 배치"
@@ -179,12 +181,19 @@ home:
         image: "sponsor-keti.png"
         link: "https://keti.re.kr"
 
-  organization-section:
+  hosting-section:
     title: 주최
+    content: 
+      name: "IEEE MetaCom 2025"
+      description: "MARC(Meta-Sejong AI Robotics Challenge) 2025는 IEEE MetaCom 2025의 일환으로 진행됩니다. IEEE MetaCom 2025는 IEEE Communications Society가 주관하는 메타버스 기반 컴퓨팅, 네트워킹, 인공지능 응용 분야의 대표적인 국제학술대회입니다."
+      link: "https://ieee-metacom.org/"
+
+  organization-section:
+    title: 주관
     content: 
       organization-1:
         name: "사물인터넷 혁신융합대학사업단"
-        image: "iotcoss-logo.svg"
+        image: "iotcoss-logo.png"
         link: "https://www.iotcoss.ac.kr/"
       organization-2:
         name: "메타버스 자율트윈 연구센터"

@@ -5,6 +5,7 @@ nav:
   award: "Awards"
   timeline: "Event Schedule"
   sponsor: "Sponsors"
+  hosting: "Hosted by"
   organization: "Organized by"
   guide: "Developer Guide"
   apply: "Apply"
@@ -45,6 +46,7 @@ home:
           media:
             media-1:
               type: image
+              wide: row
               url: "/assets/images/mission-objects.png"
               subtitle: "Types of Waste to Analyze"
               _comment: "Place images of types that should be classified as waste on the left and types that should not be classified as waste on the right"
@@ -179,12 +181,19 @@ home:
         image: "sponsor-keti.png"
         link: "https://keti.re.kr"
 
+  hosting-section:
+    title: Hosted by
+    content: 
+      name: "IEEE MetaCom 2025"
+      description: "International Conference on Metaverse Computing, Networking and Applications 2025(IEEE MetaCom 2025) is the host conference of the MARC(Meta-Sejong AI Robotics Challenge) 2025 event"
+      link: "https://ieee-metacom.org/"
+
   organization-section:
     title: Organized by
     content: 
       organization-1:
         name: "IoT Convergence & Open Sharing System"
-        image: "iotcoss-logo.svg"
+        image: "iotcoss-logo.png"
         link: "https://www.iotcoss.ac.kr/"
       organization-2:
         name: "Research Center for Autotwin Technology"
@@ -194,6 +203,7 @@ home:
         name: "Sejong University"
         image: "sponsor-sejonguniv.png"
         link: "http://sejong.ac.kr/"
+
 apply:
   title: "MARC(Meta-Sejong AI Robotics Challenge) 2025 Apply"
   content:

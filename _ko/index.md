@@ -73,7 +73,12 @@ permalink: /ko/
             {% assign media-key = 'media-' | append: forloop.index %}
             {% assign media = stage-item.media[media-key] %}
 
-            <div class="media-content">
+            <div class="media-content {{ media.wide}}">
+              <div class="media-info">
+                <p class="subtitle">{{ media.subtitle }}</p>
+                <!-- <p class="comment"><em>{{ media._comment }}</em></p> -->
+              </div>
+
             {% if media.type == 'image' %}
               <img src="{{ media.url }}" alt="{{ media.subtitle }}" />
             {% elsif media.type == 'video' %}
@@ -83,10 +88,6 @@ permalink: /ko/
               </video>
 
             {% endif %}
-              <div class="media-info">
-                <p class="subtitle">{{ media.subtitle }}</p>
-                <!-- <p class="comment"><em>{{ media._comment }}</em></p> -->
-              </div>
             </div>
           {% endfor %}
         </div>
@@ -131,6 +132,21 @@ permalink: /ko/
     {% endfor %}
   </div>
 </section> -->
+
+<section id="hosting-section">
+  <div class="title-level-1">{{ t.home.hosting-section.title }}</div>
+  <div class="hosting">
+    <div class="organization">
+      {% assign hostevent = t.home.hosting-section.content %}
+
+      <a href="{{ hostevent.link }}">
+        <h4><img src="/assets/images/link-icon.png" width="20" >{{ hostevent.name }}</h4>
+      </a>
+      <p>{{ hostevent.description }}</p>
+    </div>
+  </div>
+</section>
+
 
 <section id="organization-section">
   <div class="title-level-1">{{ t.home.organization-section.title }}</div>
