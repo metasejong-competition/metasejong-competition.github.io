@@ -29,11 +29,7 @@ permalink: /en/
   <p>{{ intro.text-5 }}</p>
 
   <div class="intro-video">
-    <video id="intro-video" controls>
-      <source src="{{ '/assets/video/META-Sejong AI Robotics Competition 2025-intro-540p.mp4' | relative_url }}" type="video/mp4">
-      <source src="{{ '/assets/video/META-Sejong AI Robotics Competition 2025-intro-540p.webm' | relative_url }}" type="video/webm">
-      <img src="/assets/images/meta-sejong.png" alt="Competition Introduction Video" style="width: 100%; height: 100%; object-fit: cover;">
-    </video>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FdfDxs7cNIk?si=_sSWZX2edCcXR6Wn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
   <div class="links">
