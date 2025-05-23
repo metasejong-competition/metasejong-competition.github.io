@@ -96,6 +96,12 @@ permalink: /ko/
   </div>
 </section>
 
+<section id="paper-section">
+  <div class="title-level-1">{{ t.home.paper-section.title }}</div>
+  {% assign paper-contents = t.home.paper-section.content %}
+  <p>{{ paper-contents.text-1 }}</p>
+  <p>{{ paper-contents.text-2 }}</p>
+</section>
 
 <section id="award-section">
   <div class="title-level-1">{{ t.home.award-section.title }}</div>
