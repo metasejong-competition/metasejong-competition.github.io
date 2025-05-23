@@ -30,7 +30,7 @@ permalink: /ko/
 
 
   <div class="intro-video">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FdfDxs7cNIk?si=_sSWZX2edCcXR6Wn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8_MlP3jJ940?si=Tu1yvUpNkCNhDtrK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
   <div class="links">
