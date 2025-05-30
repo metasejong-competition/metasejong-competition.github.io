@@ -1,5 +1,5 @@
 # metasejong-competition.github.io
-MetaSejong Embodied AI competition project page
+MARC(Meta-Sejong AI Robotics Challenge) 2025 Project Page
 
 # Version History
 

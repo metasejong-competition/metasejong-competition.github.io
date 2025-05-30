@@ -53,8 +53,10 @@
             <div class="placeholdler"></div>
         </div>
     </main>
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. {{ t.footer.copyright }}</p>
+    <footer style="background-color: RGBA(0, 53, 114, 1.00); padding: 10px; text-align: center; color: white;">
+        <div class="contents">
+            <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. {{ t.footer.copyright }}</p> <p class="contact">For inquiries: <a href="mailto:thyun@sejong.ac.kr">thyun@sejong.ac.kr</a></p>
+        </div>
     </footer>
     <script>
       function handleMissionClick(stage) {

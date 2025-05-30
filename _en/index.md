@@ -34,7 +34,7 @@ permalink: /en/
 
   <div class="links">
     <div class="link-button">
-      <a href="https://github.com/metasejong-competition/metacom2025-metasejong"><i class="fab fa-github"></i> MetaSejong Platform</a>
+      <a href="https://github.com/metasejong-competition/metacom2025-metasejong"><i class="fab fa-github"></i> Meta-Sejong Platform</a>
     </div>
     <div class="link-button">
       <a href="https://github.com/metasejong-competition/metasejong-airobotics"><i class="fab fa-github"></i> Demo Application</a>
