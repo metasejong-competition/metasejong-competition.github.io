@@ -156,7 +156,7 @@ home:
     title: "논문 제출"
     content:
       text-1: "모든 참가자는 IEEE 컨퍼런스 형식으로 최대 2페이지의 데모 논문을 제출해야 합니다. 논문에는 Meta-Sejong 가상 환경에서의 시스템 설계, 기술적 접근 방식, 주요 과제 및 결과가 포함되어야 합니다. IEEE 형식 기준을 준수하여 'Student Challenge Track'을 위한 2페이지 분량의 초록을 제출해 주세요. 자세한 가이드라인은 IEEE 제출 지침에서 확인할 수 있습니다. 제출물에는 모든 저자의 이름, 소속 및 이메일 주소가 포함되어야 하며, 이중 맹검 심사는 필요하지 않습니다. 최소 한 명의 저자는 MetaCom 2025에 직접 참석하여 챌린지 세션에서 발표해야 합니다. 수락된 논문은 현장에서 발표된 경우 IEEE MetaCom 2025 Proceedings에 포함되며 IEEE Xplore에 제출됩니다."
-      text-2: "챌린지 논문은 <a href='https://easychair.org/conferences/?conf=ieeecom2025'>이 링크</a>를 통해 제출해 주세요."
+      text-2: "챌린지 논문은 <a href='https://easychair.org/conferences/?conf=metacom2025'>이 링크</a>를 통해 제출해 주세요."
 
   award-section:
     title: "시상"

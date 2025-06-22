@@ -156,7 +156,7 @@ home:
     title: "Paper Submission"
     content:
       text-1: "All participants must submit a demo paper of up to 2 pages using the IEEE conference format. The paper must describe the system design, technical approach, key challenges, and results obtained in the Meta-Sejong virtual environment. Please submit a two-page abstract for 'Student Challenge Track' adhering to IEEE's formatting standards. Detailed guidelines are available in the IEEE submission instructions.  Your submission should include all authors' names, affiliations, and email addresses, as a double-blind review is not required.  At least one author must attend MetaCom 2025 in person to present the work during the challenge session. Accepted papers will be included in the IEEE MetaCom 2025 Proceedings and submitted to IEEE Xplore, provided they are presented on-site."
-      text-2: "Challenge paper submissions should be made via <a href='https://easychair.org/conferences/?conf=ieeecom2025'>this link</a>."
+      text-2: "Challenge paper submissions should be made via <a href='https://easychair.org/conferences/?conf=metacom2025'>this link</a>."
 
   award-section:
     title: "Awards"
