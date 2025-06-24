@@ -175,6 +175,7 @@ home:
         description: "Final Code Submission Deadline"
       timeline-3:
         date: "15 July 2025 (24:00 UTC)"
+        extended: ""
         description: "Winners Announcement"
 
   

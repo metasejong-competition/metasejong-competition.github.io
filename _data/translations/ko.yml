@@ -175,6 +175,7 @@ home:
         description: "최종코드 제출"
       timeline-3:
         date: "2025년 7월 15일 (24:00 UTC)"
+        extended: ""
         description: "수상팀 발표"
 
   
