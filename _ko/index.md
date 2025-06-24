@@ -115,7 +115,17 @@ permalink: /ko/
     {% for timeline in timelines %}
       {% assign timeline-key = 'timeline-' | append: forloop.index %}
 
-      <li class="timeline-item"><span class="date">{{ timelines[timeline-key].date }}</span> - {{ timelines[timeline-key].description }}</li>
+      <li class="timeline-item">
+        {% if timelines[timeline-key].extended == '' %}
+          {{ timelines[timeline-key].description }}: <span class="date">{{ timelines[timeline-key].date }}</span>
+        {% else %}
+          {{ timelines[timeline-key].description }}: <span class="date">{{ timelines[timeline-key].extended }}</span>
+          <span class="date strike">{{ timelines[timeline-key].date }}</span> 
+        {% endif %}
+      </li>
+
+
+
   {% endfor %}
   </ul>
 </section>

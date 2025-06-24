@@ -167,12 +167,15 @@ home:
     content: 
       timeline-1:
         date: "2025년 6월 30일 (24:00 UTC)"
+        extended: "2025년 7월 8일 (24:00 UTC)"
         description: "논문 제출"
       timeline-2:
         date: "2025년 6월 30일 (24:00 UTC)"
+        extended: "2025년 7월 8일 (24:00 UTC)"
         description: "최종코드 제출"
       timeline-3:
         date: "2025년 7월 15일 (24:00 UTC)"
+        extended: ""
         description: "수상팀 발표"
 
   

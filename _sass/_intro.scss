@@ -175,5 +175,10 @@
         .date {
             font-weight: bold;
         }
+
+        .date.strike {
+            text-decoration: line-through;
+            color: red;
+        }
     }
 }
