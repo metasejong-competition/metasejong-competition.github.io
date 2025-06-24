@@ -167,15 +167,14 @@ home:
     content: 
       timeline-1:
         date: "30 June 2025 (24:00 UTC)"
-        extended: "8 July 2025  (24:00 UTC)" 
+        extended: "8 July 2025 (24:00 UTC)" 
         description: "Paper Submission Deadline"
       timeline-2:
         date: "30 June 2025 (24:00 UTC)"
-        extended: "8 July 2025  (24:00 UTC)"
+        extended: "8 July 2025 (24:00 UTC)"
         description: "Final Code Submission Deadline"
       timeline-3:
-        date: "15 July 2025"
-        extended: ""
+        date: "15 July 2025 (24:00 UTC)"
         description: "Winners Announcement"
 
   
