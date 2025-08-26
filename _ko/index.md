@@ -132,23 +132,6 @@ permalink: /ko/
 
 
 
-<!-- <section id="sponsor-section">
-  <div class="title-level-1">{{ t.home.sponsor-section.title }}</div>
-  {% assign sponsors = t.home.sponsor-section.content %}
-  <div class="sponsors">
-    {% for sponsor in sponsors %}
-      {% assign sponsor-key = 'sponsor-' | append: forloop.index %}
-
-    <div class="sponsor">
-      <a href="{{ sponsors[sponsor-key].link }}">
-        <img src="/assets/images/{{ sponsors[sponsor-key].image }}" alt="{{ sponsors[sponsor-key].name }}">
-        {{ sponsors[sponsor-key].name }}
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-</section> -->
-
 <section id="hosting-section">
   <div class="title-level-1">{{ t.home.hosting-section.title }}</div>
   <div class="hosting">
@@ -174,6 +157,24 @@ permalink: /ko/
     <div class="organization">
       <a href="{{ organizations[organization-key].link }}">
         <img src="/assets/images/{{ organizations[organization-key].image }}" alt="{{ organizations[organization-key].name }}">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<section id="sponsor-section">
+  <div class="title-level-1">{{ t.home.sponsor-section.title }}</div>
+  {% assign sponsors = t.home.sponsor-section.content %}
+  <div class="sponsors">
+    {% for sponsor in sponsors %}
+      {% assign sponsor-key = 'sponsor-' | append: forloop.index %}
+
+    <div class="sponsor">
+      <a href="{{ sponsors[sponsor-key].link }}">
+        <img src="/assets/images/{{ sponsors[sponsor-key].image }}" title="{{ sponsors[sponsor-key].name }}">
+        <!-- {{ sponsors[sponsor-key].name }} -->
       </a>
     </div>
     {% endfor %}

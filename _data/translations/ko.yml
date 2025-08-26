@@ -180,16 +180,16 @@ home:
 
   
   sponsor-section:
-    title: 후원
+    title: 지원
     content: 
       sponsor-1:
-        name: "Sejong University"
-        image: "sponsor-sejonguniv.png"
-        link: "https://www.sejong.ac.kr"
+        name: "위고로보틱스"
+        image: "sponsor-wego.png"
+        link: "https://wego-robotics.com"
       sponsor-2:
-        name: "Korea Electronics Technology Institute"
-        image: "sponsor-keti.png"
-        link: "https://keti.re.kr"
+        name: "스텔라큐브"
+        image: "sponsor-stellarcube.png"
+        link: "https://stellarcube.co.kr"
 
   hosting-section:
     title: 주최
