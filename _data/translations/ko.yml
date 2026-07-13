@@ -11,6 +11,10 @@ nav:
   guide: "개발자 가이드"
   apply: "참가 신청"
   notice-badge: "준비 중. 공식 공지 전입니다."
+next_edition:
+  tag: "안내"
+  text: "이 사이트는 MARC 2025(1회차) 아카이브입니다. 지금 진행 중인 대회는 MetaSejong AI Robot Challenge 2026 이며, IEEE MetaCom 2026 과 함께 열립니다."
+  link: "MARC 2026 홈페이지 바로가기"
 footer:
   copyright: "모든 권리 보유."
 lang:

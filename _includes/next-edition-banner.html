@@ -1,0 +1,12 @@
+{%- assign banner_lang = page.lang | default: 'en' -%}
+{%- assign banner = site.data.translations[banner_lang]['next_edition'] -%}
+{%- if banner_lang == 'ko' -%}
+  {%- assign next_edition_url = 'https://marc-challenge.github.io/ko/' -%}
+{%- else -%}
+  {%- assign next_edition_url = 'https://marc-challenge.github.io/en/' -%}
+{%- endif -%}
+<div class="next-edition-banner" role="note">
+    <span class="next-edition-banner__tag">{{ banner.tag }}</span>
+    <span class="next-edition-banner__text">{{ banner.text }}</span>
+    <a class="next-edition-banner__link" href="{{ next_edition_url }}">{{ banner.link }} &rarr;</a>
+</div>

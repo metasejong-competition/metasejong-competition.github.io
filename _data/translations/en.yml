@@ -11,6 +11,10 @@ nav:
   guide: "Developer Guide"
   apply: "Apply"
   notice-badge: "Coming Soon. Not officially announced yet."
+next_edition:
+  tag: "Notice"
+  text: "This site is the archive of MARC 2025 (1st edition). The challenge now running is the MetaSejong AI Robot Challenge 2026, held in conjunction with IEEE MetaCom 2026."
+  link: "Go to the MARC 2026 site"
 footer:
   copyright: "All rights reserved."
 lang:

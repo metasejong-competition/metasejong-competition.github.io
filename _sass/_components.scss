@@ -112,6 +112,49 @@
     }
 }
 
+.next-edition-banner {
+    background-color: #fff6e0;
+    border-bottom: 1px solid #f0c95c;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: $text-color;
+    line-height: 1.5;
+
+    &__tag {
+        display: inline-block;
+        background-color: #f0c95c;
+        color: #5a3d00;
+        font-weight: 700;
+        border-radius: 4px;
+        padding: 1px 8px;
+        margin-right: 8px;
+        font-size: 0.82rem;
+        vertical-align: 1px;
+    }
+
+    &__link {
+        margin-left: 8px;
+        font-weight: 600;
+        color: $primary-color;
+        text-decoration: none;
+        white-space: nowrap;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        text-align: left;
+
+        &__link {
+            display: block;
+            margin: 6px 0 0;
+        }
+    }
+}
+
 .notice-badge {
   display: none;
   position: fixed;
